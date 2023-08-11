@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   position: absolute;
   top: 0;
   width: 100%;
@@ -12,10 +12,11 @@ export const FelipeLogo = styled.div`
   margin-right: auto;
   margin-left: 8rem;
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  
+
   h1 {
+    font-weight: normal;
     font-size: 1.4rem;
+    color: ${(props) => props.theme["gray-100"]};
   }
 `
 
