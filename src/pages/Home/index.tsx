@@ -1,5 +1,6 @@
 import { AboutMe } from "./components/AboutMe";
 import { SectionAbout } from "./components/SectionAbout";
+import { Skills } from "./components/Skills";
 
 export function Home() {
 
@@ -7,7 +8,7 @@ export function Home() {
     <>
      <SectionAbout />
      <AboutMe />
-   
+     <Skills />
     </>
   );
 }

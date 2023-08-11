@@ -3,10 +3,11 @@ import { styled } from "styled-components";
 export const AboutMeContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 5rem;
 
   margin: 3rem 3rem 3rem 6rem;
+  min-height: 100vh;
 
   img {
     width: 20rem;
