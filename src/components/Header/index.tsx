@@ -5,7 +5,7 @@ export function Header() {
     <HeaderContainer>
       <LinksContainer>
       <FelipeLogo>
-           <h1>FelipeDev</h1> 
+           <h1>{'<'} FelipeDev {'/>'}</h1> 
         </FelipeLogo>
         <a href="">Home</a>
         <a href="">Sobre</a>
