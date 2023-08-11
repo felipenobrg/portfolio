@@ -3,6 +3,7 @@ import { Header } from "../../../../components/Header";
 import { SectionContainer, TextContainer, AnimationText, ReadMoreButton, MyProjectsButton } from "./styles";
 import myPhoto from "../../../../assets/FelipeNobregaPhoto.jpg"
 
+
 export function SectionAbout() {
     const [text] = useTypewriter({
         words: ["Desenvolvedor Front End"],

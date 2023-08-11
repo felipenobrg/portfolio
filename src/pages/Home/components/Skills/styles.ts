@@ -1,17 +1,34 @@
 import { styled } from "styled-components";
 
 export const SkillsContainer = styled.div`
-display: flex;
-flex-direction: column;
+  background: ${(props) => props.theme["blue-400"]};
+  color: ${(props) => props.theme["white"]};
 
-background: ${(props => props.theme["blue-400"])};
-color: ${(props => props.theme["white"])};
+div h1 {
+   padding: 1.5rem;
+   margin-bottom: 3rem;
+}
+
+`;
+
+export const SkillsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  margin: 2rem 0 0 2rem;
+
+  h2 {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 300;
+  }
+
+  > div {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 2rem;
+
    img {
-    width: 10%;
+      width: 5rem;
    }
-
-   div {
-    display: flex;
-    justify-content: center;
-   }
-`
+  }
+`;
