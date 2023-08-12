@@ -16,6 +16,7 @@ export const AboutMeContainer = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     margin: 0 auto;
+    align-items: center;
   }
 `;
 
@@ -68,6 +69,7 @@ export const InformationContainer = styled.div`
   @media screen and (max-width: 768px) {
      flex-direction: column;
      gap: 0;
+     margin-bottom: 2rem;
   }
 `
 
@@ -80,4 +82,8 @@ export const SocialMediaContainer = styled.div`
     width: 100%;
     height: 3rem;
    }
+
+   @media screen and (max-width: 768px) {
+     margin-bottom: 2rem;
+  }
 `

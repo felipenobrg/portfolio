@@ -15,14 +15,28 @@ export const SectionContainer = styled.section`
     margin-top: 2rem;
     border-radius: 999px;
     width: 20rem;
-    height: 21rem;
+    height: 21em;
     object-fit: cover;
     border: 3px solid ${(props) => props.theme["white"]};
+    animation: moveUpDown 1s infinite alternate ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px); 
+  }
   }
 
   @media screen and (max-width: 768px) {
    flex-direction: column;
    justify-content: center;
+
+   img {
+    margin-top: 5rem;
+   }
   }
 
 `;
@@ -71,6 +85,10 @@ export const ReadMoreButton = styled.button`
    transition: 0.3s ease;
    filter: brightness(0.8);
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.8rem;
+  }
 `;
 
 export const MyProjectsButton = styled.button`
@@ -90,5 +108,9 @@ export const MyProjectsButton = styled.button`
   &:hover {
    transition: 0.3s ease;
    background: ${(props) => props.theme["white"]};
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.8rem;
   }
 `
