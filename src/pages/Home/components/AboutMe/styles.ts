@@ -9,16 +9,18 @@ export const AboutMeContainer = styled.div`
   margin: 3rem 3rem 3rem 6rem;
   min-height: 65vh;
 
-  img {
-    width: 23rem;
-    height: 23rem;
-  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
   }
 `;
+
+export const AnimationContainer = styled.div`
+  width: 100%; 
+  max-width: 30rem;
+  height: 50%;
+`
 
 export const AboutMeText = styled.div`
   color: ${(props) => props.theme["gray-700"]};
