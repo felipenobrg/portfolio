@@ -29,10 +29,10 @@ export function MenuDropdown() {
       {isDropdownOpen && (
         <DropdownMenu open={isDropdownOpen}>
           <DropdownList>
-            <a id={"/"}>Home</a>
-            <a id={"/sofaretro"}>Sobre</a>
-            <a id={"/skills"}>Habilidades</a>
-            <a id="projects">Projetos</a>
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Projetos</a>
             <button onClick={handleWhatsAppClick}>
               <WhatsappLogo size={20} />
               Fale comigo 
