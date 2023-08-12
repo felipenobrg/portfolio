@@ -54,24 +54,24 @@ export function Header() {
           Sobre
         </Link>
         <Link
-          to="projects"
+          to="skills"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
-          className={activeLink === "projects" ? "active" : ""}
+          className={activeLink === "skills" ? "active" : ""}
         >
-          Projetos
+          Habilidades
         </Link>
         <Link
-          to="contact"
+          to="projects"
           spy={true}
           smooth={true}
           offset={100}
           duration={500}
-          className={activeLink === "contact" ? "active" : ""}
+          className={activeLink === "projects" ? "active" : ""}
         >
-          Contato
+          Projetos
         </Link>
       </LinksContainer>
     </HeaderContainer>

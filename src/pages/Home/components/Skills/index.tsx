@@ -12,7 +12,7 @@ import { CaretLeft, CaretRight } from "phosphor-react";
 
 export function Skills() {
   return (
-    <SkillsContainer>
+    <SkillsContainer id="skills">
       <div>
       <h1>
         <CaretLeft size={28} color="#5A7FFB" weight="fill" />
