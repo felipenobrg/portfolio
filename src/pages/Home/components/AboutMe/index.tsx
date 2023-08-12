@@ -12,7 +12,7 @@ import CodingIllustrattion from "../../../../assets/CodingIllustration.json"
 
 export function AboutMe() {
   return (
-    <AboutMeContainer>
+    <AboutMeContainer id="about">
       <AnimationContainer>
         <Lottie animationData={CodingIllustrattion} />
       </AnimationContainer>

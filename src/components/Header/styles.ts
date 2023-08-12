@@ -9,8 +9,12 @@ export const HeaderContainer = styled.header`
   padding: 2rem;
   background-image: url(${backgroundSection});
   transition: top 0.3s ease, background-color 0.3s ease;
-`;
 
+  .active {
+    transition: 0.3s ease;
+    color: ${(props) => props.theme["blue-300"]};
+  }
+`;
 
 export const LinksContainer = styled.div`
   display: flex;
@@ -23,16 +27,17 @@ export const LinksContainer = styled.div`
     font-weight: bold;
     font-size: 1.2rem;
     margin-right: 2rem;
+    cursor: pointer;
 
     &:hover {
       transition: 0.3s ease;
       color: ${(props) => props.theme["blue-300"]};
     }
   }
-  
+
   @media screen and (max-width: 768px) {
-   a {
-    display: none;
-   }
+    a {
+      display: none;
+    }
   }
 `;

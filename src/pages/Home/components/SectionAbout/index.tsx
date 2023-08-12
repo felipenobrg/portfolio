@@ -12,7 +12,7 @@ export function SectionAbout() {
         deleteSpeed: 80,
       });
     return (
-        <SectionContainer>
+        <SectionContainer id="home">
         <Header />
         <TextContainer>
           <div>

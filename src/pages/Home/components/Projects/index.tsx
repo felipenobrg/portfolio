@@ -4,7 +4,7 @@ import { ProjectContainer, ProjectWrapper } from "./styles";
 
 export function Projects() {
   return (
-    <ProjectWrapper>
+    <ProjectWrapper id="projects">
       <h1>
         <CaretLeft size={28} color="#5A7FFB" weight="fill" />
         Projetos
