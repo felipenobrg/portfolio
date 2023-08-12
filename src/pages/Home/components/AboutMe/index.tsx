@@ -3,13 +3,11 @@ import {
   AboutMeText,
   AnimationContainer,
   InformationContainer,
-  SocialMediaContainer,
 } from "./styles";
-import GithubIcon from "../../../../assets/SocialNetwork/GithubIcon.png";
-import LinkedlnIcon from "../../../../assets/SocialNetwork/LinkedlnIcon.png";
 import Lottie from "lottie-react"
 import CodingIllustrattion from "../../../../assets/CodingIllustration.json"
 import { CaretLeft, CaretRight } from "phosphor-react";
+import { SocialMedia } from "../SocialMedia";
 
 export function AboutMe() {
   return (
@@ -66,10 +64,7 @@ export function AboutMe() {
             </p>
           </div>
         </InformationContainer>
-        <SocialMediaContainer>
-        <a href="https://www.linkedin.com/in/felipenobrg/"><img src={LinkedlnIcon} alt="" /></a>
-        <a href="https://github.com/felipenobrg"> <img src={GithubIcon} alt="" /></a>  
-        </SocialMediaContainer>
+      <SocialMedia />
       </AboutMeText>
     </AboutMeContainer>
   );

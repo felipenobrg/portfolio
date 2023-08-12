@@ -9,6 +9,7 @@ import {
   ButtonsWrapper,
 } from "./styles";
 import myPhoto from "../../../../assets/FelipeNobregaPhoto.jpg";
+import { SocialMedia } from "../SocialMedia";
 
 export function SectionAbout() {
   const [text] = useTypewriter({
@@ -41,9 +42,11 @@ export function SectionAbout() {
         <MyProjectsButton href="#projects">Meus Projetos</MyProjectsButton>
         </ButtonsWrapper>
       </TextContainer>
-      <div>
-        <img src={myPhoto} alt="" />
+      <div className="imgContainer">
+        <img src={myPhoto} alt="" className="myPhoto" />
+        <SocialMedia />
       </div>
+
     </SectionContainer>
   );
 }

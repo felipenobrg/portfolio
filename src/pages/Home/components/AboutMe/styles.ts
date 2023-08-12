@@ -67,17 +67,3 @@ export const InformationContainer = styled.div`
   }
 `;
 
-export const SocialMediaContainer = styled.div`
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
-
-  img {
-    width: 100%;
-    height: 3rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 2rem;
-  }
-`;

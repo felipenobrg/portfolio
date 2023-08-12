@@ -7,12 +7,18 @@ export const SectionContainer = styled.section`
   justify-content: space-evenly;
 
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   max-width: 100%;
   background-image: url(${backgroundSection});
 
-  img {
-    margin-top: 2rem;
+  .imgContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .myPhoto {
+    margin-top: 5rem;
     border-radius: 999px;
     width: 20rem;
     height: 21em;
@@ -33,8 +39,8 @@ export const SectionContainer = styled.section`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
-    img {
-      margin-top: 5rem;
+    .myPhoto {
+      margin-top: 2rem;
     }
   }
 `;
