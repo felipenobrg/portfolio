@@ -7,7 +7,7 @@ export const SocialMediaContainer = styled.div`
 
   .socialMediaImg {
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     background: ${(props => props.theme.white)};
     border-radius: 9999px;
     padding: 0.2rem
