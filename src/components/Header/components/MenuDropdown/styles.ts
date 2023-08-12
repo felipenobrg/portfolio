@@ -19,7 +19,7 @@ z-index: 100;
 position: fixed;
 top: 55px;
 left: 0px;
-height: 20rem;
+height: 21rem;
 width: 90%;
 background-color: ${(props) => props.theme["white"]};
 animation: ${slideIn} 0.3s ease-in-out;
