@@ -35,5 +35,12 @@ export const LinksContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 768px) {
+     justify-content: space-between;
 
+     a {
+      margin: 0;
+      font-size: 1rem;
+     }
+  }
 `;
