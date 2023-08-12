@@ -18,9 +18,6 @@ export function Header() {
   return (
     <HeaderContainer style={{ background: appeared ? "#202024" : "transparent" }}>
       <LinksContainer>
-      <FelipeLogo>
-           <h1>{'<'} FelipeDev {'/>'}</h1> 
-        </FelipeLogo>
         <a href="">Home</a>
         <a href="">Sobre</a>
         <a href="">Projetos</a>

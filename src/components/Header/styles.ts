@@ -11,21 +11,10 @@ export const HeaderContainer = styled.header`
   transition: top 0.3s ease, background-color 0.3s ease;
 `;
 
-export const FelipeLogo = styled.div`
-  margin-right: auto;
-  margin-left: 8rem;
-
-  h1 {
-    font-weight: normal;
-    font-size: 1.4rem;
-    color: ${(props) => props.theme["gray-100"]};
-  }
-
-
-`;
 
 export const LinksContainer = styled.div`
   display: flex;
+  justify-content: flex-end;
   gap: 1rem;
 
   a {
