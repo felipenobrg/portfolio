@@ -19,25 +19,24 @@ export const SectionContainer = styled.section`
     object-fit: cover;
     border: 3px solid ${(props) => props.theme["white"]};
     animation: moveUpDown 1s infinite alternate ease-in-out;
-}
+  }
 
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px); 
-  }
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
   }
 
   @media screen and (max-width: 768px) {
-   flex-direction: column;
-   justify-content: center;
-   img {
-    margin-top: 5rem;
-   }
+    flex-direction: column;
+    justify-content: center;
+    img {
+      margin-top: 5rem;
+    }
   }
-
 `;
 
 export const TextContainer = styled.div`
@@ -69,8 +68,15 @@ export const AnimationText = styled.div`
   font-size: 1.6rem;
 `;
 
-export const ReadMoreButton = styled.button`
+export const ButtonsWrapper = styled.div`
+  display: flex;
   margin-top: 1rem;
+`;
+
+export const ReadMoreButton = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: 0;
   border: 0;
   padding: 1rem;
   color: ${(props) => props.theme["white"]};
@@ -82,17 +88,19 @@ export const ReadMoreButton = styled.button`
   cursor: pointer;
 
   &:hover {
-   transition: 0.3s ease;
-   filter: brightness(0.8);
+    transition: 0.3s ease;
+    filter: brightness(0.8);
   }
 
   @media screen and (max-width: 768px) {
-    padding: 0.8rem;
+    padding: 0.6rem;
   }
 `;
 
-export const MyProjectsButton = styled.button`
-  margin-top: 1rem;
+export const MyProjectsButton = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: 0;
   border: 0;
   padding: 1rem;
   background: 0;
@@ -106,11 +114,11 @@ export const MyProjectsButton = styled.button`
   cursor: pointer;
 
   &:hover {
-   transition: 0.3s ease;
-   background: ${(props) => props.theme["white"]};
+    transition: 0.3s ease;
+    background: ${(props) => props.theme["white"]};
   }
 
   @media screen and (max-width: 768px) {
-    padding: 0.8rem;
+    padding: 0.6rem;
   }
-`
+`;

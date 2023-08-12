@@ -6,6 +6,7 @@ import {
   AnimationText,
   ReadMoreButton,
   MyProjectsButton,
+  ButtonsWrapper,
 } from "./styles";
 import myPhoto from "../../../../assets/FelipeNobregaPhoto.jpg";
 
@@ -35,8 +36,10 @@ export function SectionAbout() {
             <Cursor />
           </h1>
         </AnimationText>
-        <ReadMoreButton>Sobre mim</ReadMoreButton>
-        <MyProjectsButton>Meus Projetos</MyProjectsButton>
+        <ButtonsWrapper>
+        <ReadMoreButton href="#about">Sobre mim</ReadMoreButton>
+        <MyProjectsButton href="#projects">Meus Projetos</MyProjectsButton>
+        </ButtonsWrapper>
       </TextContainer>
       <div>
         <img src={myPhoto} alt="" />
