@@ -13,6 +13,10 @@ export const AboutMeContainer = styled.div`
     width: 23rem;
     height: 23rem;
   }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 `;
 
 export const AboutMeText = styled.div`
@@ -29,10 +33,17 @@ export const AboutMeText = styled.div`
   }
 
   li {
-    margin-top: 0.5rem
-    ;
+    margin-top: 0.5rem;
     width: 75%;
     font-weight: 300;
+  }
+
+  @media screen and (max-width: 768px) {
+     margin-left: 2rem;
+
+     li {
+      width: 90%;
+     }
   }
 `;
 
@@ -53,6 +64,11 @@ export const InformationContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+     flex-direction: column;
+     gap: 0;
   }
 `
 

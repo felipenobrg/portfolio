@@ -21,6 +21,8 @@ export const FelipeLogo = styled.div`
     font-size: 1.4rem;
     color: ${(props) => props.theme["gray-100"]};
   }
+
+
 `;
 
 export const LinksContainer = styled.div`
@@ -38,5 +40,11 @@ export const LinksContainer = styled.div`
       transition: 0.3s ease;
       color: ${(props) => props.theme["blue-300"]};
     }
+  }
+  
+  @media screen and (max-width: 768px) {
+   a {
+    display: none;
+   }
   }
 `;

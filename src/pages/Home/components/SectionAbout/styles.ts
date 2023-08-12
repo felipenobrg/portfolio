@@ -20,6 +20,11 @@ export const SectionContainer = styled.section`
     border: 3px solid ${(props) => props.theme["white"]};
   }
 
+  @media screen and (max-width: 768px) {
+   flex-direction: column;
+   justify-content: center;
+  }
+
 `;
 
 export const TextContainer = styled.div`
@@ -31,6 +36,17 @@ export const TextContainer = styled.div`
 
     span {
       color: ${(props) => props.theme["blue-300"]};
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    span {
+      font-size: 2.5rem;
+    }
+
+    .typed-text {
+      font-size: 1.5rem;
     }
   }
 `;
@@ -49,12 +65,16 @@ export const ReadMoreButton = styled.button`
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.3rem;
-
   cursor: pointer;
+
+  &:hover {
+   transition: 0.3s ease;
+   filter: brightness(0.8);
+  }
 `;
 
 export const MyProjectsButton = styled.button`
-margin-top: 1rem;
+  margin-top: 1rem;
   border: 0;
   padding: 1rem;
   background: 0;
@@ -63,11 +83,12 @@ margin-top: 1rem;
   text-transform: uppercase;
   margin-left: 1rem;
   color: ${(props) => props.theme["blue-300"]};
+  border: 1px solid ${(props) => props.theme["white"]};
   font-size: 1.3rem;
   cursor: pointer;
 
   &:hover {
    transition: 0.3s ease;
-   background: ${(props) => props.theme["gray-100"]};
+   background: ${(props) => props.theme["white"]};
   }
 `

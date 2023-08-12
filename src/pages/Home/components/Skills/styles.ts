@@ -34,4 +34,9 @@ export const SkillsGrid = styled.div`
       width: 5rem;
    }
   }
+
+  @media screen and (max-width: 768px) {
+     display: flex;
+     flex-direction: column;
+  }
 `;

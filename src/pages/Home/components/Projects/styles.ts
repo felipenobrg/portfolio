@@ -10,6 +10,7 @@ export const ProjectWrapper = styled.div`
    text-transform: uppercase;
    color: ${(props => props.theme["gray-900"])};
   }
+  
 `
 
 export const ProjectContainer = styled.div`
@@ -22,5 +23,10 @@ export const ProjectContainer = styled.div`
     margin-bottom: 3rem;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+  }
+
+  @media screen and (max-width: 768px) {
+     display: flex;
+     flex-direction: column;
   }
 `;

@@ -37,8 +37,7 @@ export function AboutMe() {
           </li>
           <li>
             Sempre mantendo-me atualizado com as tendências do mercado e
-            atualizações tecnológicas mais recentes, procuro estar em constante
-            sintonia com as evoluções que permeiam o cenário atual
+            atualizações tecnológicas mais recentes.
           </li>
         </ul>
         <InformationContainer>

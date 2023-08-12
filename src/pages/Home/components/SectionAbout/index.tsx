@@ -15,14 +15,16 @@ export function SectionAbout() {
         <SectionContainer>
         <Header />
         <TextContainer>
+          <div>
           <h1>
             Olá, me chamo <br />{" "}
             <span>
               Felipe <span>Nóbrega</span>{" "}
             </span>
           </h1>
+          </div>
           <AnimationText>
-            <h1>
+            <h1 className="typed-text">
               {text}
               <Cursor />
             </h1>
