@@ -9,7 +9,12 @@ export const ProjectWrapper = styled.div`
    text-transform: uppercase;
    color: ${(props => props.theme["gray-900"])};
   }
-  
+
+  @media screen and (max-width: 768px) {
+     h1 {
+      justify-content: center;
+     }
+  }
 `
 
 export const ProjectContainer = styled.div`

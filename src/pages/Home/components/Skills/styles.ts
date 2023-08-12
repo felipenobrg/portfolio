@@ -12,6 +12,13 @@ div h1 {
    font-weight: bold;
    text-transform: uppercase;
 }
+
+
+@media screen and (max-width: 768px) {
+   div h1 {
+      justify-content: center;
+   }
+  }
 `;
 
 export const SkillsGrid = styled.div`
@@ -36,5 +43,11 @@ export const SkillsGrid = styled.div`
 
   @media screen and (max-width: 768px) {
      grid-template-columns: repeat(2, 1fr); 
+     margin: 0 auto;
+
+     h2 {
+      margin-top: 0.3rem;
+      font-size: 1.2rem;
+     }
   }
 `;

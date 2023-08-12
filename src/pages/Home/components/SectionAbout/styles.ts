@@ -33,7 +33,6 @@ export const SectionContainer = styled.section`
   @media screen and (max-width: 768px) {
    flex-direction: column;
    justify-content: center;
-
    img {
     margin-top: 5rem;
    }
@@ -55,6 +54,7 @@ export const TextContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     text-align: center;
+    margin-top: 1rem;
     span {
       font-size: 2.5rem;
     }

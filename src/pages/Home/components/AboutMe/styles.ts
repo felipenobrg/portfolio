@@ -42,13 +42,6 @@ export const AboutMeText = styled.div`
     font-weight: 300;
   }
 
-  @media screen and (max-width: 768px) {
-     margin-left: 2rem;
-
-     li {
-      width: 90%;
-     }
-  }
 `;
 
 export const InformationContainer = styled.div`
