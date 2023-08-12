@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { HeaderContainer, LinksContainer } from "./styles";
 import { Link } from "react-scroll";
+import { MenuDropdown } from "./components/MenuDropdown/index";
 
 export function Header() {
   const [appeared, setAppeared] = useState(false);
@@ -15,13 +16,18 @@ export function Header() {
       const element = document.getElementById(section);
       if (element) {
         const rect = element.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        if (
+          rect.top <= window.innerHeight / 2 &&
+          rect.bottom >= window.innerHeight / 2
+        ) {
           setActiveLink(section);
           break;
         }
       }
     }
   };
+
+  const isSmallScreen = window.innerWidth < 768;
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -31,49 +37,55 @@ export function Header() {
   }, []);
 
   return (
-    <HeaderContainer style={{ background: appeared ? "#202024" : "transparent" }}>
-      <LinksContainer>
-        <Link
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          className={activeLink === "home" ? "active" : ""}
-        >
-          Home
-        </Link>
-        <Link
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={100}
-          duration={500}
-          className={activeLink === "about" ? "active" : ""}
-        >
-          Sobre
-        </Link>
-        <Link
-          to="skills"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          className={activeLink === "skills" ? "active" : ""}
-        >
-          Habilidades
-        </Link>
-        <Link
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={100}
-          duration={500}
-          className={activeLink === "projects" ? "active" : ""}
-        >
-          Projetos
-        </Link>
-      </LinksContainer>
+    <HeaderContainer
+      style={{ background: appeared ? "#202024" : "transparent" }}
+    >
+      {isSmallScreen ? (
+        <MenuDropdown />
+      ) : (
+        <LinksContainer>
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className={activeLink === "home" ? "active" : ""}
+          >
+            Home
+          </Link>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={100}
+            duration={500}
+            className={activeLink === "about" ? "active" : ""}
+          >
+            Sobre
+          </Link>
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className={activeLink === "skills" ? "active" : ""}
+          >
+            Habilidades
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={100}
+            duration={500}
+            className={activeLink === "projects" ? "active" : ""}
+          >
+            Projetos
+          </Link>
+        </LinksContainer>
+      )}
     </HeaderContainer>
   );
 }

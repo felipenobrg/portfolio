@@ -31,7 +31,7 @@ export function ProjectCard() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3>Deploy do Projeto</h3>
+              <h3>Acesse o Projeto</h3>
             </a>
           </div>
         )}

@@ -7,7 +7,7 @@ export const SectionContainer = styled.section`
   justify-content: space-evenly;
 
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   max-width: 100%;
   background-image: url(${backgroundSection});
 

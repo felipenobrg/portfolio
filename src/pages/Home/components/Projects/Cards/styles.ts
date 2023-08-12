@@ -46,6 +46,7 @@ export const CardContainer = styled.div`
         transition: 0.3s ease;
         color: ${(props) => props.theme["gray-100"]};
       }
+
     }
   }
 `;

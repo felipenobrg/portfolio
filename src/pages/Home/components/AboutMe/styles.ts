@@ -36,7 +36,7 @@ export const AboutMeText = styled.div`
 
   li {
     margin-top: 0.5rem;
-    width: 75%;
+    width: 85%;
     font-weight: 300;
   }
 `;

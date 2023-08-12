@@ -58,7 +58,7 @@ export function AboutMe() {
           </div>
           <div>
             <h2>Email</h2>
-            <p>felipenbrega2012@gmail.com</p>
+            <p>felipenobrega2012@gmail.com</p>
             <h2>Educação</h2>
             <p>
               Graduando - Ciência da Computação <br />{" "}
