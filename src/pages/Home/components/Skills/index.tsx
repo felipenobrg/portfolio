@@ -8,12 +8,17 @@ import HtmlIcon from "../../../../assets/SkillsIcons/HtmlIcon.png";
 import CssIcon from "../../../../assets/SkillsIcons/CssIcon.png";
 import BootstrapIcon from "../../../../assets/SkillsIcons/Bootstrap.png";
 import GitIcon from "../../../../assets/SkillsIcons/GitIcon.png";
+import { CaretLeft, CaretRight } from "phosphor-react";
 
 export function Skills() {
   return (
     <SkillsContainer>
       <div>
-        <h1>Habilidades e Ferramentas</h1>
+      <h1>
+        <CaretLeft size={28} color="#5A7FFB" weight="fill" />
+        Habilidades
+        <CaretRight size={28} color="#5A7FFB" weight="fill" />
+      </h1>
       </div>
       <SkillsGrid>
         <div>

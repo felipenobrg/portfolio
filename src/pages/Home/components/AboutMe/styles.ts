@@ -26,6 +26,8 @@ export const AboutMeText = styled.div`
   color: ${(props) => props.theme["gray-700"]};
 
   h1 {
+    display: flex;
+    align-items: center;
     font-size: 1.8rem;
     text-transform: uppercase;
     color: ${(props) => props.theme["blue-300"]};

@@ -9,6 +9,7 @@ import GithubIcon from "../../../../assets/SocialNetwork/GithubIcon.png";
 import LinkedlnIcon from "../../../../assets/SocialNetwork/LinkedlnIcon.png";
 import Lottie from "lottie-react"
 import CodingIllustrattion from "../../../../assets/CodingIllustration.json"
+import { CaretLeft, CaretRight } from "phosphor-react";
 
 export function AboutMe() {
   return (
@@ -17,7 +18,11 @@ export function AboutMe() {
         <Lottie animationData={CodingIllustrattion} />
       </AnimationContainer>
       <AboutMeText>
-        <h1>Sobre mim</h1>
+      <h1>
+        <CaretLeft size={28} color="#5A7FFB" weight="fill" />
+        Sobre mim
+        <CaretRight size={28} color="#5A7FFB" weight="fill" />
+      </h1>
         <ul>
           <li>
             Habilidades em <strong>JavaScript, HTML e CSS. </strong> Com o

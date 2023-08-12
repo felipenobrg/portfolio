@@ -5,12 +5,13 @@ export const SkillsContainer = styled.div`
   color: ${(props) => props.theme["white"]};
 
 div h1 {
+   display: flex;
+   align-items: center;
    padding: 1.5rem;
    margin-bottom: 3rem;
-   font-weight: 400;
+   font-weight: bold;
+   text-transform: uppercase;
 }
-
-
 `;
 
 export const SkillsGrid = styled.div`
@@ -34,7 +35,6 @@ export const SkillsGrid = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-     display: flex;
-     flex-direction: column;
+     grid-template-columns: repeat(2, 1fr); 
   }
 `;
