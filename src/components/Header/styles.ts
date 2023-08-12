@@ -35,9 +35,5 @@ export const LinksContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
-    a {
-      display: none;
-    }
-  }
+
 `;
