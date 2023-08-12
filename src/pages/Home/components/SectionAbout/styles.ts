@@ -53,7 +53,7 @@ export const TextContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 5rem;
     span {
       font-size: 2.5rem;
     }
@@ -76,7 +76,7 @@ export const ButtonsWrapper = styled.div`
 export const ReadMoreButton = styled.a`
   display: flex;
   align-items: center;
-  text-decoration: 0;
+  text-decoration: none;
   border: 0;
   padding: 1rem;
   color: ${(props) => props.theme["white"]};
@@ -100,7 +100,7 @@ export const ReadMoreButton = styled.a`
 export const MyProjectsButton = styled.a`
   display: flex;
   align-items: center;
-  text-decoration: 0;
+  text-decoration: none;
   border: 0;
   padding: 1rem;
   background: 0;
