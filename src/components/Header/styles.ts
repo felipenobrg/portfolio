@@ -1,11 +1,14 @@
 import { styled } from "styled-components";
+import backgroundSection from "../../assets/hero_pattern.jpg";
 
 export const HeaderContainer = styled.header`
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 0px;
   width: 100%;
   z-index: 1;
   padding: 2rem;
+  background-image: url(${backgroundSection});
+  transition: top 0.3s ease, background-color 0.3s ease;
 `;
 
 export const FelipeLogo = styled.div`
@@ -18,7 +21,7 @@ export const FelipeLogo = styled.div`
     font-size: 1.4rem;
     color: ${(props) => props.theme["gray-100"]};
   }
-`
+`;
 
 export const LinksContainer = styled.div`
   display: flex;
@@ -36,4 +39,4 @@ export const LinksContainer = styled.div`
       color: ${(props) => props.theme["blue-300"]};
     }
   }
-`
+`;
