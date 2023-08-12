@@ -14,7 +14,6 @@ export const HeaderContainer = styled.header`
 export const FelipeLogo = styled.div`
   margin-right: auto;
   margin-left: 8rem;
-  font-family: 'Poppins', sans-serif;
 
   h1 {
     font-weight: normal;
