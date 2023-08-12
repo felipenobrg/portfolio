@@ -1,58 +1,60 @@
 import { keyframes, styled } from "styled-components";
 
 const slideIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+from {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
 `;
 
 export const DropdownMenu = styled.div<{ open: boolean }>`
-  display: ${(props) => (props.open ? "flex" : "none")};
-  justify-content: center;
-  align-items: flex-start;
+display: ${(props) => (props.open ? "flex" : "none")};
+align-items: flex-start;
 
-  z-index: 100;
-  position: fixed;
-  top: 62px;
-  left: 0px;
-  height: 100%;
-  width: 70vw;
-  background-color: ${(props) => props.theme["gray-600"]};
-  animation: ${slideIn} 0.3s ease-in-out;
+z-index: 100;
+position: fixed;
+top: 55px;
+left: 0px;
+height: 20rem;
+width: 90%;
+background-color: ${(props) => props.theme["white"]};
+animation: ${slideIn} 0.3s ease-in-out;
+border-radius: 0 6px 6px 0;
+max-width: 100vw;
+overflow-y: auto;
+margin: 0 2rem 0 1rem;
 
-  max-width: 100vw;
-  overflow-y: auto;
-
-  @media screen and (max-width: 768px) {
-     overflow: auto;
-    }
+@media screen and (max-width: 768px) {
+  overflow: auto;
+}
 `;
 
 export const DropdownList = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: auto;
   align-items: flex-start;
-  overflow-y: auto;
+  overflow: hidden;
+
+  div {
+    border: 1px solid ${(props) => props.theme["gray-100"]};
+    width: 100vw;
+  }
 
   a {
-    display: flex;
-    align-items: center;
     text-decoration: none;
-    color: ${(props) => props.theme["white"]};
+    color: ${(props) => props.theme["gray-900"]};
     padding: 17px 18px;
     text-align: center;
-    text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.4rem;
 
     &:hover {
       transition: 0.3s ease;
-      transform: scale(1.1);
+      color: ${(props) => props.theme["gray-300"]};
     }
   }
 
@@ -62,17 +64,18 @@ export const DropdownList = styled.div`
     gap: 0.3rem;
     padding: 0.8rem;
     border: 0;
-    border-radius: 9px;
+    border-radius: 6px;
     margin: 1rem 0 0 1rem;
-    background: ${(props) => props.theme["gray-300"]};
+    background: ${(props) => props.theme["blue-300"]};
     color: ${(props) => props.theme["white"]};
     font-weight: bold;
 
     &:hover {
       transition: 0.3s ease;
-      background: ${(props) => props.theme["green-400"]};
+      background: ${(props) => props.theme["blue-400"]};
     }
   }
+
 `;
 
 interface DropdownButtonProps {
