@@ -11,16 +11,15 @@ export const AboutMeContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin: 0 auto;
     align-items: center;
   }
 `;
 
 export const AnimationContainer = styled.div`
-  width: 100%; 
+  width: 100%;
   max-width: 30rem;
   height: 50%;
-`
+`;
 
 export const AboutMeText = styled.div`
   color: ${(props) => props.theme["gray-700"]};
@@ -32,7 +31,6 @@ export const AboutMeText = styled.div`
     text-transform: uppercase;
     color: ${(props) => props.theme["blue-300"]};
     margin-bottom: 1rem;
-
     font-weight: bold;
   }
 
@@ -41,7 +39,6 @@ export const AboutMeText = styled.div`
     width: 75%;
     font-weight: 300;
   }
-
 `;
 
 export const InformationContainer = styled.div`
@@ -64,23 +61,23 @@ export const InformationContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-     flex-direction: column;
-     gap: 0;
-     margin-bottom: 2rem;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 2rem;
   }
-`
+`;
 
 export const SocialMediaContainer = styled.div`
-   display: flex;
-   gap: 0.5rem;
-   margin-top: 1rem;
-   
-   img {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+  img {
     width: 100%;
     height: 3rem;
-   }
-
-   @media screen and (max-width: 768px) {
-     margin-bottom: 2rem;
   }
-`
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+`;
