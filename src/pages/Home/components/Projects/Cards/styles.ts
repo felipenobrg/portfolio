@@ -1,52 +1,98 @@
 import { styled } from "styled-components";
 
 export const CardContainer = styled.div`
-  position: relative;
-  margin: 3rem 2rem 0 2rem;
-  cursor: pointer;
-  max-width: 100%;
-
-  &:hover {
-    transition: 0.3s ease;
-    transform: scale(1.1);
-  }
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: row;
+  margin: 0 2rem 0 3rem;
 
   img {
-    width: 100%;
-    height: 20rem;
+    width: 20rem;
+    height: 15rem;
     object-fit: cover;
   }
 
-  .options {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media screen and (max-width: 768px) {
     flex-direction: column;
-    gap: 1rem;
-
-    background: ${(props) => props.theme["blue-300"]};
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-    a {
-      font-weight: bold;
-      text-decoration: none;
-      color: ${(props) => props.theme["white"]};
-      font-size: 1.5rem;
-      text-align: center;
-
-      &:hover {
-        transition: 0.3s ease;
-        color: ${(props) => props.theme["gray-100"]};
-      }
-
+    img {
+      width: 80%;
     }
+  }
+`;
+
+export const TextAboutProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: 0.5rem;
+    width: 6rem;
+    background: ${(props) => props.theme["blue-300"]};
+    border: 0;
+    border-radius: 6px;
+    padding: 0.4rem;
+    cursor: pointer;
+    gap: 0.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: -3rem;
+  }
+`;
+
+export const DescriptionProject = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 36px;
+    color: ${(props) => props.theme["blue-300"]};
+    letter-spacing: 1px;
+  }
+
+  p {
+    color: ${(props) => props.theme["gray-600"]};
+    margin-top: -3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    p {
+      width: 100%;
+    }
+  }
+`;
+
+export const TechnologiesContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 0.4rem;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+
+    background: #c1d3fd;
+    width: 8rem;
+    height: 2.4rem;
+    font-size: 0.85rem;
+    color: #586d8a;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 `;

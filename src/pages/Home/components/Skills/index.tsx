@@ -8,6 +8,8 @@ import HtmlIcon from "../../../../assets/SkillsIcons/HtmlIcon.png";
 import CssIcon from "../../../../assets/SkillsIcons/CssIcon.png";
 import BootstrapIcon from "../../../../assets/SkillsIcons/Bootstrap.png";
 import GitIcon from "../../../../assets/SkillsIcons/GitIcon.png";
+import FigmaIcon from "../../../../assets/SkillsIcons/Figma.png";
+import NextIcon from "../../../../assets/SkillsIcons/NextIcon.png";
 import { CaretLeft, CaretRight } from "phosphor-react";
 
 export function Skills() {
@@ -21,9 +23,13 @@ export function Skills() {
       </h1>
       </div>
       <SkillsGrid>
+      <div>
+          <img src={NextIcon} />
+          <h2>NextJS</h2>
+        </div>
         <div>
           <img src={ReactIcon} alt="" />
-          <h2>React</h2>
+          <h2>ReactJS</h2>
         </div>
         <div>
           <img src={TypeScriptIcon} alt="" />
@@ -56,6 +62,10 @@ export function Skills() {
         <div>
           <img src={GoogleAnalyticsIcon} />
           <h2>Google Analytics</h2>
+        </div>
+        <div>
+          <img src={FigmaIcon} />
+          <h2>Figma</h2>
         </div>
       </SkillsGrid>
     </SkillsContainer>

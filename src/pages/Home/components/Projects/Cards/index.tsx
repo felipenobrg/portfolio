@@ -1,41 +1,33 @@
-import { CardContainer } from "./styles";
-import { useState } from "react";
-import RenoveCasaProject from "../../../../../assets/ProjectCardsPhoto/RenoveCasaProject.png"
-
+import { CardContainer, DescriptionProject, TechnologiesContainer, TextAboutProjectContainer } from "./styles";
+import RenoveCasaProject from "../../../../../assets/ProjectCardsPhoto/RenoveCasaProject.png";
+import { ArrowSquareOut } from "phosphor-react";
 
 export function ProjectCard() {
-  const [showOptions, setShowOptions] = useState(false);
-
-  const handleCardClick = () => {
-    setShowOptions(!showOptions);
-  };
-
   return (
-    <CardContainer
-      className={`${showOptions ? "show-options" : ""}`}
-      onClick={handleCardClick}
-    >
+    <CardContainer>
       <div>
-        <img src={RenoveCasaProject} alt="Project" />
-        {showOptions && (
-          <div className="options">
-            <a
-              href="https://github.com/your-username/your-repo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Ver repositório</h3>
-            </a>
-            <a
-              href="https://your-project-deploy-url.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h3>Acesse o Projeto</h3>
-            </a>
-          </div>
-        )}
+        <img src={RenoveCasaProject} alt="" />
       </div>
+      <TextAboutProjectContainer>
+        <DescriptionProject>
+        <h1>Renove Casa</h1>
+        <p>
+          Renove Casa é um freelance para uma loja de móveis, se trata de um
+          catálogo digital, separado em diferentes categorias. Renove Casa é um freelance para uma loja de móveis, se trata de um
+          catálogo digital, separado em diferentes categorias.
+        </p>
+        </DescriptionProject>
+        <TechnologiesContainer>
+          <p>ReactJS</p>
+          <p>TypeScript</p>
+          <p>Styled-Components</p>
+          <p>Google Analytics</p>
+          <p>Google Analytics</p>
+          <p>Google Analytics</p>
+          <p>Google Analytics</p>
+        </TechnologiesContainer>
+        <button> <ArrowSquareOut size={24} />Visite</button>
+      </TextAboutProjectContainer>
     </CardContainer>
   );
 }

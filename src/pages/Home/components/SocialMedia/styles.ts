@@ -11,7 +11,12 @@ export const SocialMediaContainer = styled.div`
     object-fit: cover;
     background: ${(props => props.theme.white)};
     border-radius: 9999px;
-    padding: 0.2rem
+    padding: 0.2rem;
+
+    &:hover {
+      transition: 0.3s ease;
+      background: ${(props => props.theme["gray-300"])};
+    }
   }
 
   @media screen and (max-width: 768px) {
