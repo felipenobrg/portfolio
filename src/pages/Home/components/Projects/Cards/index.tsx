@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   CardContainer,
   DescriptionProject,
@@ -21,13 +22,13 @@ export interface ProjectCardProps {
 export function ProjectCard({
   imgSrc,
   title,
-  description,
   technology1,
   technology2,
   technology3,
   technology4,
   urlProject,
 }: ProjectCardProps) {
+  const { t } = useTranslation()
   return (
     <CardContainer>
       <div>
@@ -36,7 +37,7 @@ export function ProjectCard({
       <TextAboutProjectContainer>
         <DescriptionProject>
           <h1>{title}</h1>
-          <p>{description}</p>
+          <p>{t("Projects.projectsDescription1")}</p>
         </DescriptionProject>
         <TechnologiesContainer>
           <p>{technology1}</p>
@@ -47,7 +48,7 @@ export function ProjectCard({
         <a href={urlProject}>
           {" "}
           <ArrowSquareOut size={24} />
-          Visite
+          <p>{t("Projects.projectsButtonName")}</p>
         </a>
       </TextAboutProjectContainer>
     </CardContainer>

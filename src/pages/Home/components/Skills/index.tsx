@@ -11,14 +11,16 @@ import GitIcon from "../../../../assets/SkillsIcons/GitIcon.png";
 import FigmaIcon from "../../../../assets/SkillsIcons/Figma.png";
 import NextIcon from "../../../../assets/SkillsIcons/NextIcon.png";
 import { CaretLeft, CaretRight } from "phosphor-react";
+import { useTranslation } from "react-i18next";
 
 export function Skills() {
+  const { t } = useTranslation()
   return (
     <SkillsContainer id="skills">
       <div>
       <h1>
         <CaretLeft size={28} color="#5A7FFB" weight="fill" />
-        Habilidades
+        {t("Skills.skillsH1")}
         <CaretRight size={28} color="#5A7FFB" weight="fill" />
       </h1>
       </div>
