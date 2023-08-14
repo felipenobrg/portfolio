@@ -19,6 +19,10 @@ export function MenuDropdown() {
     })}`;
     window.open(url, "_blank");
   }
+
+  function handleLinkClick() {
+    setDropdownOpen(false);
+  }
   return (
     <div>
       {isSmallScreen ? (
@@ -29,13 +33,13 @@ export function MenuDropdown() {
       {isDropdownOpen && (
         <DropdownMenu open={isDropdownOpen}>
           <DropdownList>
-            <a href="#home">Home</a>
+            <a href="#home" onClick={handleLinkClick}>Home</a>
             <div></div>
-            <a href="#about">Sobre</a>
+            <a href="#about" onClick={handleLinkClick}>Sobre</a>
             <div></div>
-            <a href="#skills">Habilidades</a>
+            <a href="#skills" onClick={handleLinkClick}>Habilidades</a>
             <div></div>
-            <a href="#projects">Projetos</a>
+            <a href="#projects" onClick={handleLinkClick}>Projetos</a>
             <div></div>
             <button onClick={handleWhatsAppClick}>
               <WhatsappLogo size={20} />

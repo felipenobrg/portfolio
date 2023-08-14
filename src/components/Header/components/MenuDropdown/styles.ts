@@ -17,13 +17,13 @@ align-items: flex-start;
 
 z-index: 100;
 position: fixed;
-top: 55px;
+top: 63px;
 left: 0px;
 height: 21rem;
 width: 90%;
 background-color: ${(props) => props.theme["white"]};
 animation: ${slideIn} 0.3s ease-in-out;
-border-radius: 0 6px 6px 0;
+border-radius: 6px;
 max-width: 100vw;
 overflow-y: auto;
 margin: 0 2rem 0 1rem;
