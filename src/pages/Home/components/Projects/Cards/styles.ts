@@ -27,7 +27,7 @@ export const TextAboutProjectContainer = styled.div`
   align-items: center;
   gap: 1rem;
 
-  button {
+  a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,6 +41,7 @@ export const TextAboutProjectContainer = styled.div`
     cursor: pointer;
     gap: 0.2rem;
     color: ${(props) => props.theme["white"]};
+    text-decoration: none;
 
     &:hover {
       transition: 0.3s ease;

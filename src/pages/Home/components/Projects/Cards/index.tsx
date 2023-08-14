@@ -1,29 +1,54 @@
-import { CardContainer, DescriptionProject, TechnologiesContainer, TextAboutProjectContainer } from "./styles";
-import RenoveCasaProject from "../../../../../assets/ProjectCardsPhoto/RenoveCasaProject.png";
+import {
+  CardContainer,
+  DescriptionProject,
+  TechnologiesContainer,
+  TextAboutProjectContainer,
+} from "./styles";
 import { ArrowSquareOut } from "phosphor-react";
 
-export function ProjectCard() {
+export interface ProjectCardProps {
+  projectId: string;
+  imgSrc: string;
+  title: string;
+  description: string;
+  technology1: string;
+  technology2: string;
+  technology3: string;
+  technology4: string;
+  urlProject: string;
+}
+
+export function ProjectCard({
+  imgSrc,
+  title,
+  description,
+  technology1,
+  technology2,
+  technology3,
+  technology4,
+  urlProject,
+}: ProjectCardProps) {
   return (
     <CardContainer>
       <div>
-        <img src={RenoveCasaProject} alt="" />
+        <img src={imgSrc} alt="" />
       </div>
       <TextAboutProjectContainer>
         <DescriptionProject>
-        <h1>Renove Casa</h1>
-        <p>
-          Renove Casa é um freelance para uma loja de móveis, se trata de um
-          catálogo digital, separado em diferentes categorias. Renove Casa é um freelance para uma loja de móveis, se trata de um
-          catálogo digital, separado em diferentes categorias.
-        </p>
+          <h1>{title}</h1>
+          <p>{description}</p>
         </DescriptionProject>
         <TechnologiesContainer>
-          <p>ReactJS</p>
-          <p>TypeScript</p>
-          <p>Styled-Components</p>
-          <p>Google Analytics</p>
+          <p>{technology1}</p>
+          <p>{technology2}</p>
+          <p>{technology3}</p>
+          <p>{technology4}</p>
         </TechnologiesContainer>
-        <button> <ArrowSquareOut size={24} />Visite</button>
+        <a href={urlProject}>
+          {" "}
+          <ArrowSquareOut size={24} />
+          Visite
+        </a>
       </TextAboutProjectContainer>
     </CardContainer>
   );
