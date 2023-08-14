@@ -2,8 +2,18 @@ import { useState, useEffect } from "react";
 import { HeaderContainer, LinksContainer } from "./styles";
 import { Link } from "react-scroll";
 import { MenuDropdown } from "./components/MenuDropdown/index";
+import { useTranslation } from 'react-i18next'
 
 export function Header() {
+  const { t, i18n: { changeLanguage, language } } = useTranslation()
+  const [ currentLanguage, setCurrentLanguage ] = useState(language)
+
+  const handleLanguageChange = () => {
+    const newLanguage = currentLanguage === 'pt' ? 'en' : 'pt';
+    changeLanguage(newLanguage)
+    setCurrentLanguage(newLanguage)
+  };
+  
   const [appeared, setAppeared] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
 
@@ -36,6 +46,7 @@ export function Header() {
     };
   }, []);
 
+
   return (
     <HeaderContainer
       style={{ background: appeared ? "#202024" : "transparent" }}
@@ -52,7 +63,7 @@ export function Header() {
             duration={500}
             className={activeLink === "home" ? "active" : ""}
           >
-            Home
+              {t("header.home")}
           </Link>
           <Link
             to="about"
@@ -62,7 +73,7 @@ export function Header() {
             duration={500}
             className={activeLink === "about" ? "active" : ""}
           >
-            Sobre
+            {t("header.about")}
           </Link>
           <Link
             to="skills"
@@ -72,7 +83,7 @@ export function Header() {
             duration={500}
             className={activeLink === "skills" ? "active" : ""}
           >
-            Habilidades
+              {t("header.skills")}
           </Link>
           <Link
             to="projects"
@@ -82,8 +93,9 @@ export function Header() {
             duration={500}
             className={activeLink === "projects" ? "active" : ""}
           >
-            Projetos
+              {t("header.projects")}
           </Link>
+          <button onClick={handleLanguageChange}>{t('Change')}</button>
         </LinksContainer>
       )}
     </HeaderContainer>

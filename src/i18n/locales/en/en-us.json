@@ -1,0 +1,23 @@
+{
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills"
+    },
+    "sectionAbout": {
+      "greetings": "My name is",
+      "role": "Front End Developer",
+      "buttonAboutMe": "About me",
+      "buttonMyProjects": "My projects"
+    },
+      "AboutMe": {
+        "aboutMeH1": "About me",
+        "aboutMeP1": "Proficient in JavaScript, HTML, and CSS. Aim to create responsive and minimalist designs.",
+        "aboutMeP2": "Experience with Front End Frameworks, such as React, and also using TypeScript for additional support.",
+        "aboutMeP3": "Freelance experience, focusing on SEO techniques to enhance website visibility and search engine ranking.",
+        "aboutMeP4": "Proactive, always seeking challenges and knowledge.",
+        "aboutMeP5": "Dedicated to staying up-to-date with market trends and the latest technological updates.",
+        "education": "Undergraduate - Computer Science, Centro Universitário Unipê"
+      }
+    }

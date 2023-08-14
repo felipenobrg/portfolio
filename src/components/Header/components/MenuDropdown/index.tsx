@@ -23,6 +23,7 @@ export function MenuDropdown() {
   function handleLinkClick() {
     setDropdownOpen(false);
   }
+  
   return (
     <div>
       {isSmallScreen ? (

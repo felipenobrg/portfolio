@@ -12,6 +12,7 @@ export function Home() {
      <AboutMe />
      <Skills />
      <Projects />
+
      <WhatsAppButton />
     </>
   );

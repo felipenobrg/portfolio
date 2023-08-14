@@ -8,8 +8,10 @@ import Lottie from "lottie-react"
 import CodingIllustrattion from "../../../../assets/CodingIllustration.json"
 import { CaretLeft, CaretRight } from "phosphor-react";
 import { SocialMedia } from "../SocialMedia";
+import { useTranslation } from "react-i18next";
 
 export function AboutMe() {
+  const { t } = useTranslation()
   return (
     <AboutMeContainer id="about">
       <AnimationContainer>
@@ -18,31 +20,24 @@ export function AboutMe() {
       <AboutMeText>
       <h1>
         <CaretLeft size={28} color="#5A7FFB" weight="fill" />
-        Sobre mim
+        {t("AboutMe.aboutMeH1")}
         <CaretRight size={28} color="#5A7FFB" weight="fill" />
       </h1>
         <ul>
           <li>
-            Habilidades em <strong>JavaScript, HTML e CSS. </strong> Com o
-            objetivo de criar designers responsivos e minimalistas.
+          {t("AboutMe.aboutMeP1")}
           </li>
           <li>
-            Experiência no uso de Frameworks Front End, como o{" "}
-            <strong>React</strong> e também usando <strong>TypeScript</strong>{" "}
-            como suporte adicional..
+          {t("AboutMe.aboutMeP2")}
           </li>
           <li>
-            Experiência em freelancers, com foco em técnicas de{" "}
-            <strong>SEO</strong>, melhorar a visibilidade e o ranking de um site
-            nos resultados dos mecanismos de busca.
+          {t("AboutMe.aboutMeP3")}
           </li>
           <li>
-            <strong>Proativo</strong>, sempre buscando nos desafios e
-            conhecimentos.
+          {t("AboutMe.aboutMeP4")}
           </li>
           <li>
-            Sempre mantendo-me atualizado com as tendências do mercado e
-            atualizações tecnológicas mais recentes.
+          {t("AboutMe.aboutMeP5")}
           </li>
         </ul>
         <InformationContainer>
@@ -59,8 +54,7 @@ export function AboutMe() {
             <p>felipenobrega2012@gmail.com</p>
             <h2>Educação</h2>
             <p>
-              Graduando - Ciência da Computação <br />{" "}
-              {"Centro Universitário Unipê"}
+            {t("AboutMe.education")}{" "}
             </p>
           </div>
         </InformationContainer>

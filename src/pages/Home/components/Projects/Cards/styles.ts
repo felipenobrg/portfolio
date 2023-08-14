@@ -11,12 +11,14 @@ export const CardContainer = styled.div`
     width: 20rem;
     height: 15rem;
     object-fit: cover;
+    border-radius: 6px;
   }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    min-width: 100%;
     img {
-      width: 100%;
+      min-width: 100%;
     }
   }
 `;

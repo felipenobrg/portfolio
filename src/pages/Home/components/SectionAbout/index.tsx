@@ -10,22 +10,27 @@ import {
 } from "./styles";
 import myPhoto from "../../../../assets/FelipeNobregaPhoto.jpg";
 import { SocialMedia } from "../SocialMedia";
+import { useTranslation } from "react-i18next";
 
 export function SectionAbout() {
+  const { t } = useTranslation()
+
+  const roleText = t("sectionAbout.role");
+
   const [text] = useTypewriter({
-    words: ["Desenvolvedor Front End"],
+    words: [roleText],
     loop: true,
     typeSpeed: 120,
     deleteSpeed: 80,
   });
 
-  return (
+  return (    
     <SectionContainer id="home">
       <Header />
       <TextContainer>
         <div>
           <h1>
-            Olá, me chamo <br />{" "}
+          {t("sectionAbout.greetings")} <br />{" "}
             <span>
               Felipe <span>Nóbrega</span>{" "}
             </span>
@@ -38,8 +43,8 @@ export function SectionAbout() {
           </h1>
         </AnimationText>
         <ButtonsWrapper>
-        <ReadMoreButton href="#about">Sobre mim</ReadMoreButton>
-        <MyProjectsButton href="#projects">Meus Projetos</MyProjectsButton>
+        <ReadMoreButton href="#about">{t("sectionAbout.buttonAboutMe")}</ReadMoreButton>
+        <MyProjectsButton href="#projects">{t("sectionAbout.buttonMyProjects")}</MyProjectsButton>
         </ButtonsWrapper>
       </TextContainer>
       <div className="imgContainer">
