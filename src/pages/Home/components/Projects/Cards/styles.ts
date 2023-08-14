@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     img {
-      width: 80%;
+      width: 100%;
     }
   }
 `;
@@ -40,6 +40,12 @@ export const TextAboutProjectContainer = styled.div`
     padding: 0.4rem;
     cursor: pointer;
     gap: 0.2rem;
+    color: ${(props) => props.theme["white"]};
+
+    &:hover {
+      transition: 0.3s ease;
+      filter: brightness(0.8);
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -56,13 +62,13 @@ export const DescriptionProject = styled.div`
   h1 {
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 36px;
     color: ${(props) => props.theme["blue-300"]};
     letter-spacing: 1px;
+    margin-right: auto;
   }
 
   p {
-    color: ${(props) => props.theme["gray-600"]};
+    color: ${(props) => props.theme["gray-500"]};
     margin-top: -3rem;
   }
 
@@ -90,9 +96,13 @@ export const TechnologiesContainer = styled.div`
     height: 2.4rem;
     font-size: 0.85rem;
     color: #586d8a;
+    text-align: center;
+    font-weight: bold;
+    flex-wrap: wrap;
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 `;

@@ -22,9 +22,6 @@ export function ProjectCard() {
           <p>TypeScript</p>
           <p>Styled-Components</p>
           <p>Google Analytics</p>
-          <p>Google Analytics</p>
-          <p>Google Analytics</p>
-          <p>Google Analytics</p>
         </TechnologiesContainer>
         <button> <ArrowSquareOut size={24} />Visite</button>
       </TextAboutProjectContainer>
