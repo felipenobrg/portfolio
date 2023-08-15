@@ -2,18 +2,11 @@ import { useState, useEffect } from "react";
 import { HeaderContainer, LinksContainer } from "./styles";
 import { Link } from "react-scroll";
 import { MenuDropdown } from "./components/MenuDropdown/index";
-import { useTranslation } from 'react-i18next'
+import { t } from "i18next";
 
 export function Header() {
-  const { t, i18n: { changeLanguage, language } } = useTranslation()
-  const [ currentLanguage, setCurrentLanguage ] = useState(language)
-
-  const handleLanguageChange = () => {
-    const newLanguage = currentLanguage === 'pt' ? 'en' : 'pt';
-    changeLanguage(newLanguage)
-    setCurrentLanguage(newLanguage)
-  };
-  
+ 
+ 
   const [appeared, setAppeared] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
 
@@ -95,7 +88,6 @@ export function Header() {
           >
               {t("header.projects")}
           </Link>
-          <button onClick={handleLanguageChange}>{t('Change')}</button>
         </LinksContainer>
       )}
     </HeaderContainer>

@@ -27,5 +27,10 @@
         "projectsH1": "Projects",
         "projectsDescription1": "Renove Casa is a freelance project for a furniture store, aiming to create a user-friendly and interactive catalog of their products. The project showcases various furniture items, categorizing them accordingly, and provides a direct link to contact the store via WhatsApp for inquiries.",
         "projectsButtonName": "Visit"
+      },
+      "ChangeLanguageButton": {
+        "changeIdiomButtonText": "Change Language",
+        "englishName": "English",
+        "portugueseName": "Portuguese"
       }
     }

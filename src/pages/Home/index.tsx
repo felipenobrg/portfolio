@@ -1,4 +1,5 @@
 import { AboutMe } from "./components/AboutMe";
+import { ChangeLanguageButton } from "./components/ChangeLanguageButton";
 import { Projects } from "./components/Projects";
 import { SectionAbout } from "./components/SectionAbout";
 import { Skills } from "./components/Skills";
@@ -12,8 +13,9 @@ export function Home() {
      <AboutMe />
      <Skills />
      <Projects />
-
+   
      <WhatsAppButton />
+     <ChangeLanguageButton />
     </>
   );
 }
