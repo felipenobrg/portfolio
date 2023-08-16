@@ -50,6 +50,11 @@ export function ProjectCard({
           <ArrowSquareOut size={24} />
           <p>{t("Projects.projectsButtonName")}</p>
         </a>
+        <a href={urlProject}>
+          {" "}
+          <ArrowSquareOut size={24} />
+          <p>{t("Projects.projectsButtonName")}</p>
+        </a>
       </TextAboutProjectContainer>
     </CardContainer>
   );

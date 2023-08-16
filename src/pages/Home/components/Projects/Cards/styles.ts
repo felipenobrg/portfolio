@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    min-width: 100%;
+    width: 100%;
     img {
       min-width: 100%;
     }
@@ -67,12 +67,12 @@ export const DescriptionProject = styled.div`
     text-transform: capitalize;
     color: ${(props) => props.theme["blue-300"]};
     letter-spacing: 1px;
-    margin-right: auto;
   }
 
   p {
     color: ${(props) => props.theme["gray-500"]};
     margin-top: -3rem;
+    
   }
 
   @media screen and (max-width: 768px) {
@@ -86,7 +86,7 @@ export const TechnologiesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  padding: 0.4rem;
+  padding: 0.3rem;
 
   p {
     display: flex;
@@ -96,8 +96,8 @@ export const TechnologiesContainer = styled.div`
 
     background: #c1d3fd;
     width: 8rem;
-    height: 2.4rem;
-    font-size: 0.85rem;
+    height: 3rem;
+    font-size: 0.9rem;
     color: #586d8a;
     text-align: center;
     font-weight: bold;

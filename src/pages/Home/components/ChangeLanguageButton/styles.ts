@@ -25,17 +25,13 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
   gap: 0.3rem;
   background: ${(props) => props.theme["gray-900"]};
   color: white;
-  display: flex;
-  align-items: center;
   padding: 0.5rem;
   border: 0;
   border-radius: 9999px;
   font-weight: bold;
   cursor: pointer;
-
-  @media screen and (max-width: 768px) {
-    margin-right: auto;
-  }
+  width: 55%;
+  margin-right: auto;
 `;
 
 export const MenuBarContent = styled(Menubar.Content)`
