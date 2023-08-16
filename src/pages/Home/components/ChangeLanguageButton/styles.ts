@@ -44,6 +44,7 @@ export const MenuBarContent = styled(Menubar.Content)`
   margin-left: 2rem;
   border: 0;
   border-radius: 6px;
+  cursor: pointer;
 `;
 
 export const MenuBarItem = styled(Menubar.Item)`
@@ -54,4 +55,8 @@ export const MenuBarItem = styled(Menubar.Item)`
   color: ${(props) => props.theme.white};
   cursor: pointer;
   margin-top: 0.2rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0.6rem;
+  }
 `;
