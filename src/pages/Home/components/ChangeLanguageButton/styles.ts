@@ -32,6 +32,10 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
   border-radius: 9999px;
   font-weight: bold;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    margin-right: auto;
+  }
 `;
 
 export const MenuBarContent = styled(Menubar.Content)`
@@ -56,7 +60,4 @@ export const MenuBarItem = styled(Menubar.Item)`
   cursor: pointer;
   margin-top: 0.2rem;
 
-  @media screen and (max-width: 768px) {
-    padding: 0.6rem;
-  }
 `;
