@@ -28,7 +28,7 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
   border-radius: 9999px;
   font-weight: bold;
   cursor: pointer;
-  width: 11rem;
+  width: 8rem;
   margin-right: auto;
 `;
 
@@ -39,7 +39,7 @@ export const MenuBarContent = styled(Menubar.Content)`
   justify-content: center;
   padding: 0.5rem;
   background: ${(props) => props.theme["gray-900"]};
-  margin-left: 2rem;
+  margin-left: 0.6rem;
   border: 0;
   border-radius: 6px;
   cursor: pointer;
