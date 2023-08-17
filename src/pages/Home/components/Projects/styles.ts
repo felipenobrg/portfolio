@@ -11,6 +11,7 @@ export const ProjectWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    text-align: center;
     h1 {
       justify-content: center;
     }

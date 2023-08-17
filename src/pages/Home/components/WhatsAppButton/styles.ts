@@ -9,6 +9,7 @@ export const WhatsAppButtonContainer = styled.div`
    bottom: 20px;
    right: 5px;
    cursor: pointer;
+ 
 
    svg:hover {
       transition: 0.3s ease;

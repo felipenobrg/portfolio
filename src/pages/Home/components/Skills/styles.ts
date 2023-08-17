@@ -47,7 +47,7 @@ export const SkillsGrid = styled.div`
 
      h2 {
       margin-top: 0.3rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
      }
   }
 `;

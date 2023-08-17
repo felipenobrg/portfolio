@@ -62,9 +62,7 @@ export const DescriptionProject = styled.div`
 export const TechnologiesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
   padding: 0.3rem;
-
   p {
     display: flex;
     align-items: center;
@@ -84,6 +82,12 @@ export const TechnologiesContainer = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    margin-right: auto; 
+
+    p {
+      height: 2.2rem;
+      font-size: 0.8rem;
+    }
   }
 `;
 
@@ -120,7 +124,7 @@ export const GitHubButton = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   width: 6rem;
   border: 2px solid ${(props) => props.theme["blue-400"]};
 
