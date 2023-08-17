@@ -62,8 +62,8 @@ export const DescriptionProject = styled.div`
 export const TechnologiesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 0.3rem;
   gap: 1rem;
+
   p {
     display: flex;
     align-items: center;
@@ -86,7 +86,7 @@ export const TechnologiesContainer = styled.div`
     margin-right: auto; 
 
     p {
-      height: 2.2rem;
+      height: 2.8rem;
       font-size: 0.8rem;
     }
   }

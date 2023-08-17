@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import {
   ButtonsContainer,
   CardContainer,
@@ -10,6 +9,7 @@ import {
 } from "./styles";
 import { ArrowSquareOut } from "phosphor-react"
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { useTranslation } from "react-i18next";
 export interface ProjectCardProps {
   projectId: string;
   imgSrc: string;
@@ -26,6 +26,7 @@ export interface ProjectCardProps {
 export function ProjectCard({
   imgSrc,
   title,
+  description,
   technology1,
   technology2,
   technology3,
@@ -42,7 +43,7 @@ export function ProjectCard({
       <TextAboutProjectContainer>
         <DescriptionProject>
           <h1>{title}</h1>
-          <p>{t("Projects.projectsDescription1")}</p>
+          <p>{description}</p>
         </DescriptionProject>
         <TechnologiesContainer>
           <p>{technology1}</p>

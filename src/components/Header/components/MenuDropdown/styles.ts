@@ -19,18 +19,15 @@ z-index: 100;
 position: fixed;
 top: 63px;
 left: 0px;
-height: 21rem;
+height: 40%;
 width: 90%;
 background-color: ${(props) => props.theme["white"]};
 animation: ${slideIn} 0.3s ease-in-out;
 border-radius: 6px;
 max-width: 100vw;
-overflow-y: auto;
+overflow-y: hidden;
 margin: 0 2rem 0 1rem;
 
-@media screen and (max-width: 768px) {
-  overflow: auto;
-}
 `;
 
 export const DropdownList = styled.div`

@@ -1,4 +1,5 @@
 import RenoveCasaImage from "../assets/ProjectCardsPhoto/RenoveCasaProject.png";
+import AlmeidaFestImage from "../assets/ProjectCardsPhoto/AlmeidaFestProject.png";
 
 export const projectsData = [
   {
@@ -14,5 +15,19 @@ export const projectsData = [
     technology5: "SEO",
     urlProject: "https://renovecasajp.com/",
     githubUrl: "https://github.com/felipenobrg/renovecasajp"
+  },
+  {
+    projectId: "1",
+    imgSrc: AlmeidaFestImage,
+    title: "Almeida Fest",
+    description:
+      "Almeida Fest é um projeto freelancer para empresa prestadora de serviços. Os serviços estão separados por categoria e cada serviço tem um link para o WhatsApp.",
+    technology1: "ReactJS",
+    technology2: "TypeScript",
+    technology3: "Styled-Components",
+    technology4: "Google Analytics",
+    technology5: "SEO",
+    urlProject: "https://almeidafest.com/",
+    githubUrl: "https://github.com/felipenobrg/almeidafest"
   },
 ];

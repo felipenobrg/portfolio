@@ -26,7 +26,8 @@
   "Projects": {
     "projectsH1": "Projetos",
     "projectsDescription1": "Renove Casa é um projeto freelance para uma loja de mobiliário, com o objetivo de criar um catálogo interativo e de fácil utilização dos seus produtos. O projeto apresenta vários artigos de mobiliário, categorizando-os de acordo com as suas características, e fornece uma ligação direta para contactar a loja através do WhatsApp para questões.",
-    "projectsButtonName": "Visite"
+    "projectsButtonName": "Visite",
+    "projectsDescription2": "Almeida Fest é um projeto freelancer para empresa prestadora de serviços. Os serviços estão separados por categoria e cada serviço tem um link para o WhatsApp."
   },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Mudar Idioma",
