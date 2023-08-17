@@ -57,8 +57,8 @@ export function ProjectCard({
           <ArrowSquareOut size={24} />
           <p>{t("Projects.projectsButtonName")}</p>
         </VisitButton>
-        <GitHubButton href={urlProject}>
-          <p><GitHubLogoIcon href={githubUrl} />GitHub</p>
+        <GitHubButton href={githubUrl}>
+          <p><GitHubLogoIcon />GitHub</p>
         </GitHubButton>
         </ButtonsContainer>
       </TextAboutProjectContainer>

@@ -86,6 +86,7 @@ export const TechnologiesContainer = styled.div`
     margin-right: auto; 
 
     p {
+      width: 9rem;
       height: 2.8rem;
       font-size: 0.8rem;
     }
@@ -125,7 +126,6 @@ export const GitHubButton = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 1rem;
   width: 6rem;
   border: 2px solid ${(props) => props.theme["blue-400"]};
 

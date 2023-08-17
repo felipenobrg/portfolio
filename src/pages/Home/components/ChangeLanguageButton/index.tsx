@@ -22,7 +22,7 @@ export function ChangeLanguageButton() {
     <ChangeLanguageContainer>
       <Menubar.Menu>
         <MenuBarIcon>
-          <Globe size={20} /> {languageNames[currentLanguage]} <CaretDown size={20} />
+          <p><Globe size={20}/> {languageNames[currentLanguage]} <CaretDown size={20} /></p>
         </MenuBarIcon>
         <Menubar.Portal>
           <MenuBarContent sideOffset={5} alignOffset={-3}>

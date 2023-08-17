@@ -17,7 +17,7 @@ export const projectsData = [
     githubUrl: "https://github.com/felipenobrg/renovecasajp"
   },
   {
-    projectId: "1",
+    projectId: "2",
     imgSrc: AlmeidaFestImage,
     title: "Almeida Fest",
     description:

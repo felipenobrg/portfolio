@@ -13,11 +13,13 @@ export const ChangeLanguageContainer = styled(Menubar.Root)`
 `;
 
 export const MenuBarIcon = styled(Menubar.Trigger)`
+
+p {
   display: flex;
   align-items: center;
   gap: 0.3rem;
   background: ${(props) => props.theme["gray-900"]};
-  color: white;
+  color: ${(props) => props.theme["white"]};
   padding: 0.5rem;
   border: 0;
   border-radius: 9999px;
@@ -25,11 +27,13 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
   cursor: pointer;
   width: 8rem;
   margin-right: auto;
+  width: fit-content; /* Change to fit the content width */
+  max-width: 8rem; 
 
   svg {
-    width: 20rem;
+    
   }
-
+}
 `;
 
 export const MenuBarContent = styled(Menubar.Content)`
