@@ -63,6 +63,7 @@ export const TechnologiesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0.3rem;
+  gap: 1rem;
   p {
     display: flex;
     align-items: center;

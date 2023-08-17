@@ -11,8 +11,6 @@ export const ChangeLanguageContainer = styled(Menubar.Root)`
   left: 5px;
   cursor: pointer;
 
-  width: 20rem;
-
   svg:hover {
     transition: 0.3s ease;
     transform: scale(1.1);
@@ -30,7 +28,7 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
   border-radius: 9999px;
   font-weight: bold;
   cursor: pointer;
-  width: 55%;
+  width: 11rem;
   margin-right: auto;
 `;
 
