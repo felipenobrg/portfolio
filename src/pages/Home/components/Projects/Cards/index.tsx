@@ -20,6 +20,7 @@ export interface ProjectCardProps {
   technology3: string;
   technology4: string;
   urlProject: string;
+  githubUrl?: string;
 }
 
 export function ProjectCard({
@@ -30,6 +31,7 @@ export function ProjectCard({
   technology3,
   technology4,
   urlProject,
+  githubUrl,
 }: ProjectCardProps) {
   const { t } = useTranslation()
   return (
@@ -55,7 +57,7 @@ export function ProjectCard({
           <p>{t("Projects.projectsButtonName")}</p>
         </VisitButton>
         <GitHubButton href={urlProject}>
-          <p><GitHubLogoIcon  />GitHub</p>
+          <p><GitHubLogoIcon href={githubUrl} />GitHub</p>
         </GitHubButton>
         </ButtonsContainer>
       </TextAboutProjectContainer>

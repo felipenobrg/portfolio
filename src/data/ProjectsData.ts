@@ -12,6 +12,7 @@ export const projectsData = [
     technology3: "Styled-Components",
     technology4: "Google Analytics",
     technology5: "SEO",
-    urlProject: "https://renovecasajp.com/"
+    urlProject: "https://renovecasajp.com/",
+    githubUrl: "https://github.com/felipenobrg/renovecasajp"
   },
 ];

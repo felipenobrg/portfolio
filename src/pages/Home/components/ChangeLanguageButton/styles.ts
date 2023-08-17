@@ -10,11 +10,6 @@ export const ChangeLanguageContainer = styled(Menubar.Root)`
   bottom: 20px;
   left: 5px;
   cursor: pointer;
-
-  svg:hover {
-    transition: 0.3s ease;
-    transform: scale(1.1);
-  }
 `;
 
 export const MenuBarIcon = styled(Menubar.Trigger)`
@@ -30,6 +25,7 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
   cursor: pointer;
   width: 8rem;
   margin-right: auto;
+
 `;
 
 export const MenuBarContent = styled(Menubar.Content)`
@@ -52,6 +48,5 @@ export const MenuBarItem = styled(Menubar.Item)`
 
   color: ${(props) => props.theme.white};
   cursor: pointer;
-  margin-top: 0.2rem;
-
+  margin-top: 0.2rem;  
 `;
