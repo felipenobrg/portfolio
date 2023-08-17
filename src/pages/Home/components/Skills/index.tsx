@@ -12,11 +12,17 @@ import FigmaIcon from "../../../../assets/SkillsIcons/Figma.png";
 import NextIcon from "../../../../assets/SkillsIcons/NextIcon.png";
 import { CaretLeft, CaretRight } from "phosphor-react";
 import { useTranslation } from "react-i18next";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 export function Skills() {
   const { t } = useTranslation()
+    useEffect(() => {
+    AOS.init({duration: 2000})
+  })
   return (
-    <SkillsContainer id="skills">
+    <SkillsContainer id="skills" data-aos="fade-right">
       <div>
       <h1>
         <CaretLeft size={28} color="#5A7FFB" weight="fill" />

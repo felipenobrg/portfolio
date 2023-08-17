@@ -26,6 +26,10 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
   width: 8rem;
   margin-right: auto;
 
+  svg {
+    width: 20rem;
+  }
+
 `;
 
 export const MenuBarContent = styled(Menubar.Content)`

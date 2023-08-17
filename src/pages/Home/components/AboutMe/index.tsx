@@ -9,11 +9,17 @@ import CodingIllustrattion from "../../../../assets/CodingIllustration.json"
 import { CaretLeft, CaretRight } from "phosphor-react";
 import { SocialMedia } from "../SocialMedia";
 import { useTranslation } from "react-i18next";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 export function AboutMe() {
   const { t } = useTranslation()
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  })
   return (
-    <AboutMeContainer id="about">
+    <AboutMeContainer id="about" data-aos="fade-right">
       <AnimationContainer>
         <Lottie animationData={CodingIllustrattion} />
       </AnimationContainer>
