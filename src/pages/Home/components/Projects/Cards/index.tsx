@@ -1,12 +1,15 @@
 import { useTranslation } from "react-i18next";
 import {
+  ButtonsContainer,
   CardContainer,
   DescriptionProject,
+  GitHubButton,
   TechnologiesContainer,
   TextAboutProjectContainer,
+  VisitButton,
 } from "./styles";
-import { ArrowSquareOut } from "phosphor-react";
-
+import { ArrowSquareOut } from "phosphor-react"
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 export interface ProjectCardProps {
   projectId: string;
   imgSrc: string;
@@ -45,16 +48,16 @@ export function ProjectCard({
           <p>{technology3}</p>
           <p>{technology4}</p>
         </TechnologiesContainer>
-        <a href={urlProject}>
+        <ButtonsContainer>
+        <VisitButton href={urlProject}>
           {" "}
           <ArrowSquareOut size={24} />
           <p>{t("Projects.projectsButtonName")}</p>
-        </a>
-        <a href={urlProject}>
-          {" "}
-          <ArrowSquareOut size={24} />
-          <p>{t("Projects.projectsButtonName")}</p>
-        </a>
+        </VisitButton>
+        <GitHubButton href={urlProject}>
+          <p><GitHubLogoIcon  />GitHub</p>
+        </GitHubButton>
+        </ButtonsContainer>
       </TextAboutProjectContainer>
     </CardContainer>
   );

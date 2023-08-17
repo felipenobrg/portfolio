@@ -29,28 +29,6 @@ export const TextAboutProjectContainer = styled.div`
   align-items: center;
   gap: 1rem;
 
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: 0.5rem;
-    width: 6rem;
-    background: ${(props) => props.theme["blue-300"]};
-    border: 0;
-    border-radius: 6px;
-    padding: 0.4rem;
-    cursor: pointer;
-    gap: 0.2rem;
-    color: ${(props) => props.theme["white"]};
-    text-decoration: none;
-
-    &:hover {
-      transition: 0.3s ease;
-      filter: brightness(0.8);
-    }
-  }
-
   @media screen and (max-width: 768px) {
     margin-top: -3rem;
   }
@@ -72,7 +50,6 @@ export const DescriptionProject = styled.div`
   p {
     color: ${(props) => props.theme["gray-500"]};
     margin-top: -3rem;
-    
   }
 
   @media screen and (max-width: 768px) {
@@ -108,4 +85,65 @@ export const TechnologiesContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  margin-right: auto;
+  gap: 1rem;
+`;
+
+export const VisitButton = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: 0.5rem;
+  width: 6rem;
+  background: ${(props) => props.theme["blue-300"]};
+  border: 0;
+  border-radius: 6px;
+  padding: 0.4rem;
+  cursor: pointer;
+  gap: 0.2rem;
+  color: ${(props) => props.theme["white"]};
+  text-decoration: none;
+
+  &:hover {
+    transition: 0.3s ease;
+    filter: brightness(0.8);
+  }
+
+`;
+
+export const GitHubButton = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  width: 6rem;
+  border: 2px solid ${(props) => props.theme["blue-400"]};
+
+  border-radius: 6px;
+  padding: 0.4rem;
+  cursor: pointer;
+  color: ${(props) => props.theme["gray-900"]};
+  text-decoration: none;
+
+  p {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  p img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &:hover {
+    transition: 0.3s ease;
+    border: 2px solid ${(props) => props.theme["blue-300"]};
+  }
+
 `;

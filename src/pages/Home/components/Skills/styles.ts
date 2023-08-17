@@ -51,3 +51,4 @@ export const SkillsGrid = styled.div`
      }
   }
 `;
+
