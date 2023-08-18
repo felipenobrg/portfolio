@@ -13,7 +13,8 @@ export const ChangeLanguageContainer = styled(Menubar.Root)`
 `;
 
 export const MenuBarIcon = styled(Menubar.Trigger)`
-
+ background: none;
+ border: 0;
 p {
   display: flex;
   align-items: center;
@@ -27,12 +28,8 @@ p {
   cursor: pointer;
   width: 8rem;
   margin-right: auto;
-  width: fit-content; /* Change to fit the content width */
-  max-width: 8rem; 
 
-  svg {
-    
-  }
+  max-width: 8rem; 
 }
 `;
 
@@ -41,12 +38,19 @@ export const MenuBarContent = styled(Menubar.Content)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.3rem;
   background: ${(props) => props.theme["gray-900"]};
-  margin-left: 0.6rem;
+  margin-left: 0.8rem;
   border: 0;
   border-radius: 6px;
   cursor: pointer;
+  width: 7rem;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const MenuBarItem = styled(Menubar.Item)`

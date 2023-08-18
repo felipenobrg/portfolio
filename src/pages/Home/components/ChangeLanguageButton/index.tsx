@@ -28,12 +28,12 @@ export function ChangeLanguageButton() {
           <MenuBarContent sideOffset={5} alignOffset={-3}>
             {currentLanguage === "en" && (
               <MenuBarItem onClick={() => handleChangeLanguage("pt")}>
-                {t("ChangeLanguageButton.portugueseName")} <CaretRight />
+               <p> {t("ChangeLanguageButton.portugueseName")} <CaretRight /></p>   
               </MenuBarItem>
             )}
             {currentLanguage === "pt" && (
               <MenuBarItem onClick={() => handleChangeLanguage("en")}>
-                {t("ChangeLanguageButton.englishName")} <CaretRight />
+             <p>{t("ChangeLanguageButton.englishName")} <CaretRight /></p>   
               </MenuBarItem>
             )}
             <Menubar.Separator className="MenubarSeparator" />
