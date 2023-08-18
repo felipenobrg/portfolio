@@ -14,8 +14,10 @@ export function ChangeLanguageButton() {
   };
 
   const handleChangeLanguage = (newLanguage: string) => {
-    changeLanguage(newLanguage);
-    setCurrentLanguage(newLanguage);
+    if (newLanguage !== currentLanguage) {
+      changeLanguage(newLanguage);
+      setCurrentLanguage(newLanguage);
+    }
   };
 
   return (
@@ -26,14 +28,13 @@ export function ChangeLanguageButton() {
         </MenuBarIcon>
         <Menubar.Portal>
           <MenuBarContent sideOffset={5} alignOffset={-3}>
-            {currentLanguage === "en" && (
+            {currentLanguage === "en" ? (
               <MenuBarItem onClick={() => handleChangeLanguage("pt")}>
-               <p> {t("ChangeLanguageButton.portugueseName")} <CaretRight /></p>   
+               <p>{t("ChangeLanguageButton.portugueseName")} <CaretRight /></p>   
               </MenuBarItem>
-            )}
-            {currentLanguage === "pt" && (
+            ) : (
               <MenuBarItem onClick={() => handleChangeLanguage("en")}>
-             <p>{t("ChangeLanguageButton.englishName")} <CaretRight /></p>   
+                <p>{t("ChangeLanguageButton.englishName")} <CaretRight /></p>   
               </MenuBarItem>
             )}
             <Menubar.Separator className="MenubarSeparator" />
@@ -43,4 +44,3 @@ export function ChangeLanguageButton() {
     </ChangeLanguageContainer>
   );
 }
-
