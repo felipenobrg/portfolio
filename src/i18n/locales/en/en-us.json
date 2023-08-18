@@ -1,36 +1,40 @@
 {
-    "header": {
-      "home": "Home",
-      "about": "About",
-      "projects": "Projects",
-      "skills": "Skills"
-    },
-    "sectionAbout": {
-      "greetings": "Hello, I'm",
-      "role": "Front End Developer",
-      "buttonAboutMe": "About me",
-      "buttonMyProjects": "My projects"
-    },
-      "AboutMe": {
-        "aboutMeH1": "About me",
-        "aboutMeP1": "Proficient in JavaScript, HTML, and CSS. Aim to create responsive and minimalist designs.",
-        "aboutMeP2": "Experience with Front End Frameworks, such as React, and also using TypeScript for additional support.",
-        "aboutMeP3": "Freelance experience, focusing on SEO techniques to enhance website visibility and search engine ranking.",
-        "aboutMeP4": "Proactive, always seeking challenges and knowledge.",
-        "aboutMeP5": "Dedicated to staying up-to-date with market trends and the latest technological updates.",
-        "education": "Undergraduate - Computer Science, Centro Universitário Unipê"
-      },
-      "Skills": {
-        "skillsH1": "Skills"
-      },
-      "Projects": {
-        "projectsH1": "Projects",
-        "projectsDescription1": "Renove Casa is a freelance project for a furniture store, aiming to create a user-friendly and interactive catalog of their products. The project showcases various furniture items, categorizing them accordingly, and provides a direct link to contact the store via WhatsApp for inquiries.",
-        "projectsButtonName": "Visit"
-      },
-      "ChangeLanguageButton": {
-        "changeIdiomButtonText": "Change Language",
-        "englishName": "English",
-        "portugueseName": "Portuguese"
-      }
-    }
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "sectionAbout": {
+    "greetings": "Hello, I'm",
+    "role": "Front End Developer",
+    "buttonAboutMe": "About me",
+    "buttonMyProjects": "My projects"
+  },
+  "AboutMe": {
+    "aboutMeH1": "About me",
+    "aboutMeP1": "Proficient in JavaScript, HTML, and CSS. Aim to create responsive and minimalist designs.",
+    "aboutMeP2": "Experience with Front End Frameworks, such as React, and also using TypeScript for additional support.",
+    "aboutMeP3": "Freelance experience, focusing on SEO techniques to enhance website visibility and search engine ranking.",
+    "aboutMeP4": "Proactive, always seeking challenges and knowledge.",
+    "aboutMeP5": "Dedicated to staying up-to-date with market trends and the latest technological updates.",
+    "nameH2": "Name",
+    "locationH2": "Location",
+    "educationH2": "Education",
+    "education": "In progress - Computer Science in Centro Universitário Unipê",
+    "brazilName": "Brazil"
+  },
+  "Skills": {
+    "skillsH1": "Skills"
+  },
+  "Projects": {
+    "projectsH1": "Projects",
+    "projectsDescription1": "Renove Casa is a freelance project for a furniture store, aiming to create a user-friendly and interactive catalog of their products. The project showcases various furniture items, categorizing them accordingly, and provides a direct link to contact the store via WhatsApp for inquiries.",
+    "projectsButtonName": "Visit"
+  },
+  "ChangeLanguageButton": {
+    "changeIdiomButtonText": "Change Language",
+    "englishName": "English",
+    "portugueseName": "Portuguese"
+  }
+}

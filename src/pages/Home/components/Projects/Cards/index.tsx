@@ -35,6 +35,7 @@ export function ProjectCard({
   githubUrl,
 }: ProjectCardProps) {
   const { t } = useTranslation()
+  
   return (
     <CardContainer>
       <div>
@@ -43,7 +44,7 @@ export function ProjectCard({
       <TextAboutProjectContainer>
         <DescriptionProject>
           <h1>{title}</h1>
-          <p>{description}</p>
+          <p>{t(description)}</p>
         </DescriptionProject>
         <TechnologiesContainer>
           <p>{technology1}</p>

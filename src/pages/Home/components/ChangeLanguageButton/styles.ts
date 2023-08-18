@@ -32,7 +32,7 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
     max-width: 10rem;
 
     svg {
-      flex-shrink: 0; 
+      flex-shrink: 0;
     }
   }
 `;
@@ -44,7 +44,7 @@ export const MenuBarContent = styled(Menubar.Content)`
   justify-content: center;
   padding: 0.3rem;
   background: ${(props) => props.theme["gray-900"]};
-  margin-left: 0.8rem;
+  margin-left: 1.2rem;
   border: 0;
   border-radius: 6px;
   cursor: pointer;

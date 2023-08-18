@@ -18,7 +18,11 @@
     "aboutMeP3": "Experiência em freelancers, com foco em técnicas de SEO, melhorar a visibilidade e o ranking de um site nos resultados dos mecanismos de busca.",
     "aboutMeP4": "Proativo, sempre buscando nos desafios e conhecimentos.",
     "aboutMeP5": "Sempre mantendo-me atualizado com as tendências do mercado e atualizações tecnológicas mais recentes.",
-    "education": "Graduando - Ciência da Computação Centro Universitário Unipê"
+    "nameH2": "Nome",
+    "locationH2": "Localização",
+    "educationH2": "Educação",
+    "education": "Graduando - Ciência da Computação no Centro Universitário Unipê",
+    "brazilName": "Brasil"
   },
   "Skills": {
     "skillsH1": "Habilidades"
