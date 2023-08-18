@@ -16,7 +16,7 @@ export function MenuDropdown() {
   function handleWhatsAppClick() {
     const url = `https://api.whatsapp.com/send?${queryString.stringify({
       phone: "5583987663399",
-      text: "Olá. Gostaria de falar sobre uma proposta~~",
+      text: "Olá, Felipe. Gostaria de falar com você sobre uma proposta",
     })}`;
     window.open(url, "_blank");
   }
