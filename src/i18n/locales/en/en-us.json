@@ -6,7 +6,7 @@
       "skills": "Skills"
     },
     "sectionAbout": {
-      "greetings": "My name is",
+      "greetings": "Hello, I'm",
       "role": "Front End Developer",
       "buttonAboutMe": "About me",
       "buttonMyProjects": "My projects"

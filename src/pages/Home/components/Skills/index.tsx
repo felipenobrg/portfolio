@@ -22,15 +22,15 @@ export function Skills() {
     AOS.init({duration: 2000})
   })
   return (
-    <SkillsContainer id="skills" data-aos="fade-right">
-      <div>
+    <SkillsContainer id="skills">
+      <div data-aos="fade-right">
       <h1>
         <CaretLeft size={28} color="#5A7FFB" weight="fill" />
         {t("Skills.skillsH1")}
         <CaretRight size={28} color="#5A7FFB" weight="fill" />
       </h1>
       </div>
-      <SkillsGrid>
+      <SkillsGrid data-aos="fade-right">
       <div>
           <img src={NextIcon} />
           <h2>NextJS</h2>

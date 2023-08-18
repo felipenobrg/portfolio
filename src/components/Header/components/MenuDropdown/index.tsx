@@ -2,6 +2,7 @@ import { WhatsappLogo } from "phosphor-react";
 import queryString from "query-string";
 import { useState } from "react";
 import { DropdownMenu, DropdownButton, DropdownList } from "./styles";
+import { t } from "i18next";
 
 export function MenuDropdown() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -34,13 +35,13 @@ export function MenuDropdown() {
       {isDropdownOpen && (
         <DropdownMenu open={isDropdownOpen}>
           <DropdownList>
-            <a href="#home" onClick={handleLinkClick}>Home</a>
+            <a href="#home" onClick={handleLinkClick}>{t("header.home")}</a>
             <div></div>
-            <a href="#about" onClick={handleLinkClick}>Sobre</a>
+            <a href="#about" onClick={handleLinkClick}>{t("header.about")}</a>
             <div></div>
-            <a href="#skills" onClick={handleLinkClick}>Habilidades</a>
+            <a href="#skills" onClick={handleLinkClick}>{t("header.skills")}</a>
             <div></div>
-            <a href="#projects" onClick={handleLinkClick}>Projetos</a>
+            <a href="#projects" onClick={handleLinkClick}>{t("header.projects")}</a>
             <div></div>
             <button onClick={handleWhatsAppClick}>
               <WhatsappLogo size={20} />

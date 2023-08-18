@@ -5,15 +5,12 @@ import { MenuDropdown } from "./components/MenuDropdown/index";
 import { t } from "i18next";
 
 export function Header() {
- 
- 
   const [appeared, setAppeared] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
 
   const handleScroll = () => {
     const isAppeared = window.scrollY > 0;
     setAppeared(isAppeared);
-
     const sections = ["home", "about", "projects", "contact"];
     for (const section of sections) {
       const element = document.getElementById(section);
@@ -38,7 +35,6 @@ export function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
 
   return (
     <HeaderContainer

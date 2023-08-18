@@ -32,7 +32,6 @@ export function SectionAbout() {
   });
 
   return (    
-
     <SectionContainer id="home">
       <Header />
       <TextContainer data-aos="fade-right">
