@@ -40,6 +40,7 @@ export function Header() {
     <HeaderContainer
       style={{ background: appeared ? "#202024" : "transparent" }}
     >
+      <h1>Fn.</h1>
       {isSmallScreen ? (
         <MenuDropdown />
       ) : (

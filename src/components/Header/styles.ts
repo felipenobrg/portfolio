@@ -2,6 +2,10 @@ import { styled } from "styled-components";
 import backgroundSection from "../../assets/hero_pattern.jpg";
 
 export const HeaderContainer = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   position: fixed;
   top: 0px;
   width: 100%;
@@ -13,6 +17,12 @@ export const HeaderContainer = styled.header`
   .active {
     transition: 0.3s ease;
     color: ${(props) => props.theme["blue-300"]};
+  }
+
+  h1 {
+    color: ${(props) => props.theme["blue-300"]};
+    font-size: 2rem;
+    
   }
 `;
 

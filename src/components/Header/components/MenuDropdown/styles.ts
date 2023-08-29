@@ -84,9 +84,9 @@ export const DropdownButton = styled.button<DropdownButtonProps>`
   position: absolute;
   z-index: 100;
   border: 0;
-  padding: 15px 15px;
-  margin-top: -1rem;
   background: none;
+  margin-left: -1rem;
+
 
   .icon {
     width: 24px;
