@@ -15,15 +15,17 @@ export const SectionContainer = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
+
   }
 
   .myPhoto {
     margin-top: 5rem;
     border-radius: 999px;
     width: 20rem;
-    height: 21em;
+    height: 20rem;
     object-fit: cover;
-    border: 3px solid ${(props) => props.theme["white"]};
+    border: 5px solid ${(props) => props.theme["blue-300"]};
+    padding: 5px;
     animation: moveUpDown 1s infinite alternate ease-in-out;
   }
 
