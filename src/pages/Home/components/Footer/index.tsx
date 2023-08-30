@@ -5,15 +5,22 @@ import {
   SocialIconLink,
   PhraseContainer,
 } from "./styles";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import AOS from "aos";
 
 
 export function Footer() {
+  const { t } = useTranslation();
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <FooterContainer>
-      <div className="grid-container">
+      <div className="grid-container" data-aos="fade-right">
         <PhraseContainer>
           <h1>Felipe Nóbrega</h1>
-          <p>" O conhecimento é uma chave que abre as portas do sucesso. "</p>
+          <p> {t("Footer.phrase")}</p>
         </PhraseContainer>
         <SocialIcons>
           <h1>Social</h1>
@@ -27,7 +34,7 @@ export function Footer() {
       </div>
       <div className="line-container">
         <div className="line"></div>
-        <p>©  Copyright 2023. Feito por <a href="https://www.linkedin.com/in/felipenobrg/">Felipe Nóbrega</a></p>
+        <p>©  Copyright 2023. {t("Footer.madeBy")} <a href="https://www.linkedin.com/in/felipenobrg/">Felipe Nóbrega</a></p>
       </div>
     </FooterContainer>
   );

@@ -37,5 +37,9 @@
     "changeIdiomButtonText": "Mudar Idioma",
     "englishName": "Inglês",
     "portugueseName": "Português"
+  },
+  "Footer": {
+    "phrase": "Na busca do conhecimento, descobrimos que a verdadeira riqueza está na sabedoria que compartilhamos com o outro.",
+    "madeBy": "Feito por"
   }
 }

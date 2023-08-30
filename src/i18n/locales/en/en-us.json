@@ -37,5 +37,9 @@
     "changeIdiomButtonText": "Change Language",
     "englishName": "English",
     "portugueseName": "Portuguese"
+  },
+  "Footer": {
+    "phrase": "In the search for knowledge, we discover that true wealth lies in the wisdom we share with others.",
+    "madeBy": "Made by"
   }
 }
