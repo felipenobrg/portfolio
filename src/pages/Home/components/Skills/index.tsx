@@ -12,67 +12,67 @@ import FigmaIcon from "../../../../assets/SkillsIcons/Figma.png";
 import NextIcon from "../../../../assets/SkillsIcons/NextIcon.png";
 import { CaretLeft, CaretRight } from "phosphor-react";
 import { useTranslation } from "react-i18next";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export function Skills() {
-  const { t } = useTranslation()
-    useEffect(() => {
-    AOS.init({duration: 2000})
-  })
+  const { t } = useTranslation();
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <SkillsContainer id="skills">
       <div data-aos="fade-right">
-      <h1>
-        <CaretLeft size={28} color="#5A7FFB" weight="fill" />
-        {t("Skills.skillsH1")}
-        <CaretRight size={28} color="#5A7FFB" weight="fill" />
-      </h1>
+        <h1>
+          <CaretLeft size={28} color="#5A7FFB" weight="fill" />
+          {t("Skills.skillsH1")}
+          <CaretRight size={28} color="#5A7FFB" weight="fill" />
+        </h1>
       </div>
       <SkillsGrid data-aos="fade-right">
-      <div>
-          <img src={NextIcon} />
+        <div>
+          <img src={NextIcon} data-aos="fade-down" />
           <h2>NextJS</h2>
         </div>
         <div>
-          <img src={ReactIcon} alt="" />
+          <img src={ReactIcon} alt="" data-aos="fade-down" />
           <h2>ReactJS</h2>
         </div>
         <div>
-          <img src={TypeScriptIcon} alt="" />
+          <img src={TypeScriptIcon} alt="" data-aos="fade-down" />
           <h2>TypeScript</h2>
         </div>
         <div>
-          <img src={JavaScriptIcon} alt="" />
+          <img src={JavaScriptIcon} alt="" data-aos="fade-down" />
           <h2>JavaScript</h2>
         </div>
         <div>
-          <img src={StyledComponentsIcon} />
+          <img src={StyledComponentsIcon} data-aos="fade-down" />
           <h2>Styled Components</h2>
         </div>
         <div>
-          <img src={BootstrapIcon} />
+          <img src={BootstrapIcon} data-aos="fade-down" />
           <h2>Bootstrap</h2>
         </div>
         <div>
-          <img src={HtmlIcon} />
+          <img src={HtmlIcon} data-aos="fade-down" />
           <h2>HTML</h2>
         </div>
         <div>
-          <img src={CssIcon} />
+          <img src={CssIcon} data-aos="fade-down" />
           <h2>CSS</h2>
         </div>
         <div>
-          <img src={GitIcon} />
+          <img src={GitIcon} data-aos="fade-down" />
           <h2>Git</h2>
         </div>
         <div>
-          <img src={GoogleAnalyticsIcon} />
+          <img src={GoogleAnalyticsIcon} data-aos="fade-down" />
           <h2>Google Analytics</h2>
         </div>
         <div>
-          <img src={FigmaIcon} />
+          <img src={FigmaIcon} data-aos="fade-down" />
           <h2>Figma</h2>
         </div>
       </SkillsGrid>
