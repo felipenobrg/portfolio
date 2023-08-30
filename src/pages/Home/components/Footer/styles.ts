@@ -16,7 +16,7 @@ export const FooterContainer = styled.footer`
   }
 
   .line-container {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .line {

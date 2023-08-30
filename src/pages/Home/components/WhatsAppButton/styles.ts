@@ -6,7 +6,7 @@ export const WhatsAppButtonContainer = styled.div`
    align-items: center;
    gap: 0.2rem;
    position: fixed;
-   bottom: 20px;
+   bottom: 30px;
    right: 5px;
    cursor: pointer;
  

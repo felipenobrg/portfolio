@@ -7,7 +7,7 @@ export const ChangeLanguageContainer = styled(Menubar.Root)`
   align-items: center;
   gap: 0.2rem;
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   left: 5px;
   cursor: pointer;
 `;
