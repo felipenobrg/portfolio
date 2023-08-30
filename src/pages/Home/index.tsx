@@ -1,5 +1,6 @@
 import { AboutMe } from "./components/AboutMe";
 import { ChangeLanguageButton } from "./components/ChangeLanguageButton";
+import { Footer } from "./components/Footer";
 import { Projects } from "./components/Projects";
 import { SectionAbout } from "./components/SectionAbout";
 import { Skills } from "./components/Skills";
@@ -15,6 +16,7 @@ export function Home() {
      <Projects />
      <WhatsAppButton />
      <ChangeLanguageButton />
+     <Footer />
     </>
   );
 }

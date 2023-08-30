@@ -15,6 +15,7 @@ export const ChangeLanguageContainer = styled(Menubar.Root)`
 export const MenuBarIcon = styled(Menubar.Trigger)`
   background: none;
   border: 0;
+  opacity: 0.9;
   p {
     display: flex;
     align-items: center;
