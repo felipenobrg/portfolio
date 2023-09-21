@@ -12,6 +12,20 @@ export const GlobalStyle = createGlobalStyle`
    box-shadow: 0 0 0 2px ${(props) => props.theme['gray-500']};
  }
 
+ ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: ${(props) => props.theme['blue-300']};
+  }
+
  body {
     color: ${(props) => props.theme['gray-300']};
     -webkit-font-smoothing: antialiased;
