@@ -27,7 +27,7 @@ export const SkillsGrid = styled.div`
   margin: 2rem 0 0 2rem;
 
   h2 {
-   font-weight: 300;
+   font-weight: 500;
   }
 
   > div {

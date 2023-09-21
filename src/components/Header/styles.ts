@@ -22,7 +22,13 @@ export const HeaderContainer = styled.header`
   h1 {
     color: ${(props) => props.theme["blue-300"]};
     font-size: 2rem;
-    
+    margin-left: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+     h1 {
+      margin: 0;
+     }
   }
 `;
 
