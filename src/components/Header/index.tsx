@@ -11,7 +11,7 @@ export function Header() {
   const handleScroll = () => {
     const isAppeared = window.scrollY > 0;
     setAppeared(isAppeared);
-    const sections = ["home", "about", "projects", "contact"];
+    const sections = ["home", "about", "projects"];
     for (const section of sections) {
       const element = document.getElementById(section);
       if (element) {

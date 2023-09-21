@@ -21,7 +21,6 @@ export function SectionAbout() {
   })
 
   const { t } = useTranslation()
-
   const roleText = t("sectionAbout.role");
 
   const [text] = useTypewriter({
