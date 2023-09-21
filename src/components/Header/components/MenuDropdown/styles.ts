@@ -26,7 +26,7 @@ animation: ${slideIn} 0.3s ease-in-out;
 border-radius: 6px;
 max-width: 100vw;
 overflow-y: hidden;
-margin: 0 2rem 0 1rem;
+margin: 3.05rem 2rem 0 1rem;
 
 `;
 
