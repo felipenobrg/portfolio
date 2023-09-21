@@ -15,7 +15,6 @@ export const SectionContainer = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
-
   }
 
   .myPhoto {
@@ -42,6 +41,10 @@ export const SectionContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     .myPhoto {
+      margin-top: 2rem;
+    }
+
+    .myName {
       margin-top: 2rem;
     }
   }

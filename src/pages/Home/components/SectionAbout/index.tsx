@@ -34,7 +34,7 @@ export function SectionAbout() {
     <SectionContainer id="home">
       <Header />
       <TextContainer data-aos="fade-right">
-        <div>
+        <div className="myName">
           <h1>
           {t("sectionAbout.greetings")} <br />{" "}
             <span>
