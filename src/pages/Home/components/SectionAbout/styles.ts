@@ -45,7 +45,7 @@ export const SectionContainer = styled.section`
     }
 
     .myName {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
   }
 `;
