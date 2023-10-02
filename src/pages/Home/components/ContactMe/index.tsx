@@ -37,10 +37,10 @@ export const ContactMe = () => {
           <CaretRight size={28} color="#5A7FFB" weight="fill" />
         </h1>
       <form ref={form} onSubmit={sendEmail}>
-        <input type="text" name="user_name" placeholder={t("ContactMe.Name")}/>
+        <input type="text" name="user_name" placeholder={t("ContactMe.name")}/>
         <input type="email" name="user_email" placeholder="Email"/>
-        <textarea name="message" placeholder={t("ContactMe.Message")} />
-        <input className="submit-button" type="submit" value={t("ContactMe.Submit")} />
+        <textarea name="message" placeholder={t("ContactMe.message")} />
+        <input className="submit-button" type="submit" value={t("ContactMe.submit")} />
       </form>
     </ContactFormContainer>
   );

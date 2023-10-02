@@ -35,10 +35,10 @@
     "projectsButtonName": "Visite"
   },
   "ContactMe": {
-    "TalkToMe": "Fale Comigo!",
-    "Name": "Nome",
-    "Message": "Messagem",
-    "Submit": "Enviar"
+    "talkToMe": "Fale Comigo!",
+    "name": "Nome",
+    "message": "Messagem",
+    "submit": "Enviar"
   },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Mudar Idioma",

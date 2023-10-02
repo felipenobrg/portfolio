@@ -35,10 +35,10 @@
     "projectsButtonName": "Visit"
   },
   "ContactMe": {
-    "TalkToMe": "Talk To Me!",
-    "Name": "Name",
-    "Message": "Message",
-    "Submit": "Submit"
+    "talkToMe": "Talk To Me!",
+    "name": "Name",
+    "message": "Message",
+    "submit": "Submit"
   },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Change Language",
