@@ -17,6 +17,7 @@ export const ContactFormContainer = styled.div`
     font-size: 16px;
     font-weight: bold;
     border: 0;
+    color: ${(props => props.theme.white)};
 
     &:hover {
       filter: brightness(0.8);
@@ -56,5 +57,17 @@ export const ContactFormContainer = styled.div`
   textarea:focus {
     border-color: ${(props) => props.theme["blue-500"]};
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+
+    .submit-button {
+        width: 40%;
+    }
+
   }
 `;
