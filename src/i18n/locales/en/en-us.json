@@ -33,6 +33,12 @@
     "projectsDescription2": "Almeida Fest is a freelance project for a service company. The services are separated by category and each service has a WhatsApp link, with a personality message for each service.",
     "projectsButtonName": "Visit"
   },
+  "ContactMe": {
+    "TalkToMe": "Talk To Me!",
+    "Name": "Name",
+    "Message": "Message",
+    "Submit": "Submit"
+  },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Change Language",
     "englishName": "English",

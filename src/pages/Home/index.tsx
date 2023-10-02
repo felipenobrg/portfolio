@@ -7,6 +7,7 @@ import { WhatsAppButton } from "./components/WhatsAppButton";
 import { ChangeLanguageButton } from "./components/ChangeLanguageButton";
 import { Footer } from "./components/Footer";
 import { LoadingSpinner } from "./components/LoadingAnimation";
+import { ContactMe } from "./components/ContactMe";
 
 
 export function Home() {
@@ -29,6 +30,7 @@ export function Home() {
           <AboutMe />
           <Skills />
           <Projects />
+          <ContactMe />
           <WhatsAppButton />
           <ChangeLanguageButton />
           <Footer />

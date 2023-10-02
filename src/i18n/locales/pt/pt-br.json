@@ -33,6 +33,12 @@
     "projectsDescription2": "Almeida Fest é um projeto freelancer para empresa prestadora de serviços. Os serviços estão separados por categoria e cada serviço tem um link para o WhatsApp, com uma mensagem personalidade para cada serviço.",
     "projectsButtonName": "Visite"
   },
+  "ContactMe": {
+    "TalkToMe": "Fale Comigo!",
+    "Name": "Nome",
+    "Message": "Messagem",
+    "Submit": "Enviar"
+  },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Mudar Idioma",
     "englishName": "Inglês",
