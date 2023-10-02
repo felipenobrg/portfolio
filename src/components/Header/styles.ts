@@ -23,6 +23,7 @@ export const HeaderContainer = styled.header`
     color: ${(props) => props.theme["blue-300"]};
     font-size: 2rem;
     margin-left: 2rem;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 768px) {

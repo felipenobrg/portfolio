@@ -40,7 +40,9 @@ export function Header() {
     <HeaderContainer
       style={{ background: appeared ? "#202024" : "transparent" }}
     >
+      <Link to="home">
       <h1>Fn.</h1>
+      </Link>
       {isSmallScreen ? (
         <MenuDropdown />
       ) : (
