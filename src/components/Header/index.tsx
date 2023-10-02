@@ -46,16 +46,6 @@ export function Header() {
       ) : (
         <LinksContainer>
           <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            className={activeLink === "home" ? "active" : ""}
-          >
-            {t("header.home")}
-          </Link>
-          <Link
             to="about"
             spy={true}
             smooth={true}

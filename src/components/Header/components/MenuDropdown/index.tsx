@@ -35,8 +35,6 @@ export function MenuDropdown() {
       {isDropdownOpen && (
         <DropdownMenu open={isDropdownOpen}>
           <DropdownList>
-            <a href="#home" onClick={handleLinkClick}>{t("header.home")}</a>
-            <div></div>
             <a href="#about" onClick={handleLinkClick}>{t("header.about")}</a>
             <div></div>
             <a href="#skills" onClick={handleLinkClick}>{t("header.skills")}</a>
