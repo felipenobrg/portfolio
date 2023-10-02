@@ -33,7 +33,7 @@ export const ContactMe = () => {
     <ContactFormContainer id="contact">
         <h1>
           <CaretLeft size={28} color="#5A7FFB" weight="fill" />
-          {t("ContactMe.TalkToMe")}
+          {t("ContactMe.talkToMe")}
           <CaretRight size={28} color="#5A7FFB" weight="fill" />
         </h1>
       <form ref={form} onSubmit={sendEmail}>

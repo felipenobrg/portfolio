@@ -61,6 +61,10 @@ export const ContactFormContainer = styled.div`
 
   
   @media screen and (max-width: 768px) {
+    h1 {
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
     form {
         width: 80%;
     }
