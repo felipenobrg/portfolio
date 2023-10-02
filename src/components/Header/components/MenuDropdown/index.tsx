@@ -43,6 +43,7 @@ export function MenuDropdown() {
             <div></div>
             <a href="#projects" onClick={handleLinkClick}>{t("header.projects")}</a>
             <div></div>
+            <a href="#contact" onClick={handleLinkClick}>{t("header.contact")}</a>
             <button onClick={handleWhatsAppClick}>
               <WhatsappLogo size={20} />
               Fale comigo

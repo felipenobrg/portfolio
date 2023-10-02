@@ -53,7 +53,7 @@ export function Header() {
             duration={500}
             className={activeLink === "home" ? "active" : ""}
           >
-              {t("header.home")}
+            {t("header.home")}
           </Link>
           <Link
             to="about"
@@ -73,7 +73,7 @@ export function Header() {
             duration={500}
             className={activeLink === "skills" ? "active" : ""}
           >
-              {t("header.skills")}
+            {t("header.skills")}
           </Link>
           <Link
             to="projects"
@@ -83,7 +83,17 @@ export function Header() {
             duration={500}
             className={activeLink === "projects" ? "active" : ""}
           >
-              {t("header.projects")}
+            {t("header.projects")}
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={100}
+            duration={500}
+            className={activeLink === "projects" ? "active" : ""}
+          >
+            {t("header.contact")}
           </Link>
         </LinksContainer>
       )}
