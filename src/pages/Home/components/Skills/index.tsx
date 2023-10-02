@@ -24,13 +24,13 @@ export function Skills() {
   return (
     <SkillsContainer id="skills">
       <div data-aos="fade-right">
-        <h1>
+        <h1 data-aos="fade-right">
           <CaretLeft size={28} color="#5A7FFB" weight="fill" />
           {t("Skills.skillsH1")}
           <CaretRight size={28} color="#5A7FFB" weight="fill" />
         </h1>
       </div>
-      <SkillsGrid data-aos="fade-right">
+      <SkillsGrid>
         <div>
           <img src={NextIcon} data-aos="fade-down" />
           <h2>NextJS</h2>

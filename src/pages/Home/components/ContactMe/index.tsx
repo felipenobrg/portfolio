@@ -31,16 +31,16 @@ export const ContactMe = () => {
 
   return (
     <ContactFormContainer id="contact">
-        <h1>
+        <h1 data-aos="fade-right">
           <CaretLeft size={28} color="#5A7FFB" weight="fill" />
           {t("ContactMe.talkToMe")}
           <CaretRight size={28} color="#5A7FFB" weight="fill" />
         </h1>
       <form ref={form} onSubmit={sendEmail}>
-        <input type="text" name="user_name" placeholder={t("ContactMe.name")}/>
-        <input type="email" name="user_email" placeholder="Email"/>
-        <textarea name="message" placeholder={t("ContactMe.message")} />
-        <input className="submit-button" type="submit" value={t("ContactMe.submit")} />
+        <input type="text" name="user_name" placeholder={t("ContactMe.name")} data-aos="fade-right"/>
+        <input type="email" name="user_email" placeholder="Email" data-aos="fade-right"/>
+        <textarea name="message" placeholder={t("ContactMe.message")} data-aos="fade-right" />
+        <input className="submit-button" type="submit" value={t("ContactMe.submit")}  data-aos="fade-right"/>
       </form>
     </ContactFormContainer>
   );

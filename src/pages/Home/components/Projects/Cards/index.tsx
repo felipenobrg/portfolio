@@ -37,7 +37,7 @@ export function ProjectCard({
   const { t } = useTranslation()
   
   return (
-    <CardContainer>
+    <CardContainer data-aos="fade-right">
       <div>
         <img src={imgSrc} alt="" />
       </div>
