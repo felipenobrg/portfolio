@@ -1,4 +1,3 @@
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import {
   FooterContainer,
   SocialIcons,
@@ -8,7 +7,8 @@ import {
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
-
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -25,16 +25,19 @@ export function Footer() {
         <SocialIcons>
           <h1>Social</h1>
           <SocialIconLink href="https://www.linkedin.com/in/felipenobrg/">
-                <LinkedInLogoIcon />
+          <FontAwesomeIcon icon={faLinkedin} />
           </SocialIconLink>
           <SocialIconLink href="https://github.com/felipenobrg">
-                <GitHubLogoIcon />
+          <FontAwesomeIcon icon={faGithub} />
           </SocialIconLink>
         </SocialIcons>
       </div>
       <div className="line-container">
         <div className="line"></div>
-        <p>©  Copyright 2023. {t("Footer.madeBy")} <a href="https://www.linkedin.com/in/felipenobrg/">Felipe Nóbrega</a></p>
+        <p>
+          © Copyright 2023. {t("Footer.madeBy")}{" "}
+          <a href="https://www.linkedin.com/in/felipenobrg/">Felipe Nóbrega</a>
+        </p>
       </div>
     </FooterContainer>
   );
