@@ -9,7 +9,6 @@ import {
   ButtonsWrapper,
 } from "./styles";
 import myPhoto from "../../../../assets/FelipeNobregaPhoto.jpg";
-import { SocialMedia } from "../SocialMedia";
 import { useTranslation } from "react-i18next";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -55,7 +54,6 @@ export function SectionAbout() {
       </TextContainer>
       <div className="imgContainer" data-aos="fade-right">
         <img src={myPhoto} alt="" className="myPhoto" />
-        <SocialMedia />
       </div>
 
     </SectionContainer>

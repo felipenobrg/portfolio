@@ -15,6 +15,7 @@ export const SectionContainer = styled.section`
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 3rem;
   }
 
   .myPhoto {
@@ -52,7 +53,7 @@ export const SectionContainer = styled.section`
 
 export const TextContainer = styled.div`
   color: ${(props) => props.theme["white"]};
-  margin-top: 2rem;
+  margin-top: 5rem;
 
   span {
     font-size: 4rem;
