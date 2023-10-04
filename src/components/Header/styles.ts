@@ -22,7 +22,7 @@ export const HeaderContainer = styled.header`
   h1 {
     color: ${(props) => props.theme["blue-300"]};
     font-size: 2rem;
-    margin-left: 2rem;
+    margin-left: 7rem;
     cursor: pointer;
   }
 
@@ -43,7 +43,7 @@ export const LinksContainer = styled.div`
     color: ${(props) => props.theme["white"]};
     font-weight: bold;
     font-size: 1.2rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
     cursor: pointer;
 
     &:hover {

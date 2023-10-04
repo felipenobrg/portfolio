@@ -74,7 +74,7 @@ export const ContactFormContainer = styled.div`
 
     .submit-button {
         width: 40%;
-        padding: 1.1rem;
+        height: 3.5rem;
     }
 
   }

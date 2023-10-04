@@ -25,7 +25,6 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
     padding: 0.5rem;
     border: 0;
     border-radius: 9999px;
-    font-weight: bold;
     cursor: pointer;
     width: 9rem;
     margin-right: auto;

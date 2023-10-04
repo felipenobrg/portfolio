@@ -71,13 +71,11 @@ export const TechnologiesContainer = styled.div`
     border-radius: 999px;
 
     background: #c1d3fd;
-    width: 8rem;
+    width: 10rem;
     height: 3rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #586d8a;
     text-align: center;
-    font-weight: bold;
-    flex-wrap: wrap;
   }
 
   @media screen and (max-width: 768px) {
