@@ -38,7 +38,8 @@
     "talkToMe": "Talk To Me!",
     "name": "Name",
     "message": "Message",
-    "submit": "Submit"
+    "submit": "Submit",
+    "sucessMessage": "Mensage Sent! ✨"
   },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Change Language",

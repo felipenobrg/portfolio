@@ -6,7 +6,7 @@ export const ContactFormContainer = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   background: ${(props) => props.theme["blue-400"]};
-  height: 100vh;
+  height: 90vh;
   margin-top: 4rem;
 
   .submit-button {
@@ -31,7 +31,7 @@ export const ContactFormContainer = styled.div`
     font-size: 1.8rem;
     text-transform: uppercase;
     color: ${(props) => props.theme["white"]};
-    margin: 2rem auto 1rem 0;
+    margin: 2rem auto 1rem 2rem;
     font-weight: bold;
   }
 
@@ -77,5 +77,28 @@ export const ContactFormContainer = styled.div`
         height: 3.5rem;
     }
 
+  }
+`;
+
+export const SuccessMessage = styled.div`
+  background-color: ${(props) => props.theme.green}; 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  position: fixed;
+  top: 10px;
+  right: 10px; 
+  z-index: 999; 
+  animation: slideIn 0.3s ease-in-out;
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 `;

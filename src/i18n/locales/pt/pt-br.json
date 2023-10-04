@@ -38,7 +38,8 @@
     "talkToMe": "Fale Comigo!",
     "name": "Nome",
     "message": "Messagem",
-    "submit": "Enviar"
+    "submit": "Enviar",
+    "sucessMessage": "Mensagem Enviada ✨!"
   },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Mudar Idioma",
