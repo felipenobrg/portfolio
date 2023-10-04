@@ -19,6 +19,7 @@ This project was developed using the following technologies:
 - ReactJS
 - TypeScript
 - Styled-Components
+- EmailJS
 - i3Next
 - React-Router-Dom
 - Phosphor Icons
