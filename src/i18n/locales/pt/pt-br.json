@@ -36,10 +36,11 @@
   },
   "ContactMe": {
     "talkToMe": "Fale Comigo!",
+    "contact": "Entre em contato via Email",
     "name": "Nome",
     "message": "Messagem",
     "submit": "Enviar",
-    "sucessMessage": "Mensagem Enviada ✨!"
+    "sucessMessage": "Mensagem Enviada! ✨"
   },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Mudar Idioma",

@@ -6,8 +6,24 @@ export const ContactFormContainer = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   background: ${(props) => props.theme["blue-400"]};
-  height: 90vh;
   margin-top: 4rem;
+  
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      text-transform: none;
+      font-weight: 300;
+      font-weight: bold;
+    }
+  }
 
   .submit-button {
     width: 30%;
@@ -17,7 +33,8 @@ export const ContactFormContainer = styled.div`
     font-size: 16px;
     font-weight: bold;
     border: 0;
-    color: ${(props => props.theme.white)};
+    color: ${(props) => props.theme.white};
+    margin-bottom: 3rem;
 
     &:hover {
       filter: brightness(0.8);
@@ -39,7 +56,7 @@ export const ContactFormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
     width: 35%;
   }
 
@@ -59,29 +76,27 @@ export const ContactFormContainer = styled.div`
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
 
-  
   @media screen and (max-width: 768px) {
     height: 75vh;
-    
+
     h1 {
-        margin: 0 auto;
-        margin-top: 3rem;
+      margin: 0 auto;
+      margin-top: 3rem;
     }
     form {
-        width: 80%;
-        margin-top: 4rem;
+      width: 80%;
+      margin-top: 4rem;
     }
 
     .submit-button {
-        width: 40%;
-        height: 3.5rem;
+      width: 40%;
+      height: 3.5rem;
     }
-
   }
 `;
 
 export const SuccessMessage = styled.div`
-  background-color: ${(props) => props.theme.green}; 
+  background-color: ${(props) => props.theme.green};
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -89,10 +104,10 @@ export const SuccessMessage = styled.div`
   text-align: center;
   position: fixed;
   top: 10px;
-  right: 10px; 
-  z-index: 999; 
+  right: 10px;
+  z-index: 999;
   animation: slideIn 0.3s ease-in-out;
-  
+
   @keyframes slideIn {
     from {
       transform: translateX(100%);

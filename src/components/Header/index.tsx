@@ -7,11 +7,12 @@ import { t } from "i18next";
 export function Header() {
   const [appeared, setAppeared] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
-
+  
   const handleScroll = () => {
     const isAppeared = window.scrollY > 0;
     setAppeared(isAppeared);
-    const sections = ["home", "about", "projects"];
+    
+    const sections = ["home", "about", "skills", "projects", "contact"];
     for (const section of sections) {
       const element = document.getElementById(section);
       if (element) {
@@ -21,7 +22,7 @@ export function Header() {
           rect.bottom >= window.innerHeight / 2
         ) {
           setActiveLink(section);
-          break;
+          return; 
         }
       }
     }
@@ -51,7 +52,7 @@ export function Header() {
             to="about"
             spy={true}
             smooth={true}
-            offset={100}
+            offset={0}
             duration={500}
             className={activeLink === "about" ? "active" : ""}
           >
@@ -61,7 +62,7 @@ export function Header() {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={0}
             duration={500}
             className={activeLink === "skills" ? "active" : ""}
           >
@@ -71,7 +72,7 @@ export function Header() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={100}
+            offset={0}
             duration={500}
             className={activeLink === "projects" ? "active" : ""}
           >
@@ -81,9 +82,9 @@ export function Header() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={100}
+            offset={0}
             duration={500}
-            className={activeLink === "projects" ? "active" : ""}
+            className={activeLink === "contact" ? "active" : ""}
           >
             {t("header.contact")}
           </Link>

@@ -36,6 +36,7 @@
   },
   "ContactMe": {
     "talkToMe": "Talk To Me!",
+    "contact": "Get in touch by Email",
     "name": "Name",
     "message": "Message",
     "submit": "Submit",
