@@ -7,7 +7,7 @@ export const ContactFormContainer = styled.div`
   flex-direction: column;
   background: ${(props) => props.theme["blue-400"]};
   margin-top: 4rem;
-  
+
   .contact {
     display: flex;
     align-items: center;
@@ -20,7 +20,6 @@ export const ContactFormContainer = styled.div`
       justify-content: center;
       gap: 3px;
       text-transform: none;
-      font-weight: 300;
       font-weight: bold;
     }
   }
@@ -77,11 +76,16 @@ export const ContactFormContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    height: 75vh;
+
 
     h1 {
       margin: 0 auto;
       margin-top: 3rem;
+      font-size: 1.2rem;
+
+      svg {
+        width: 2rem;
+      }
     }
     form {
       width: 80%;
@@ -91,6 +95,7 @@ export const ContactFormContainer = styled.div`
     .submit-button {
       width: 40%;
       height: 3.5rem;
+      margin-bottom: 6rem;
     }
   }
 `;
