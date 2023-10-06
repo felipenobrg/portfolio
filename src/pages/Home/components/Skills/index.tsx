@@ -32,12 +32,16 @@ export function Skills() {
       </div>
       <SkillsGrid>
         <div>
-          <img src={NextIcon} data-aos="fade-down" />
-          <h2>NextJS</h2>
+          <img src={ReactIcon} alt="" data-aos="fade-down" />
+          <h2>ReactJS</h2>
         </div>
         <div>
           <img src={ReactIcon} alt="" data-aos="fade-down" />
-          <h2>ReactJS</h2>
+          <h2>React Native</h2>
+        </div>
+        <div>
+          <img src={NextIcon} data-aos="fade-down" />
+          <h2>NextJS</h2>
         </div>
         <div>
           <img src={TypeScriptIcon} alt="" data-aos="fade-down" />
