@@ -59,6 +59,7 @@ export const ButtonsContainer = styled.div`
     font-weight: 100;
     cursor: pointer;
     transition: 0.3s ease;
+    color: ${(props => props.theme["gray-900"])};
 
     &:hover {
       background: ${(props => props.theme["blue-300"])};
