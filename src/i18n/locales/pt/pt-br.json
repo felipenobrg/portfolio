@@ -40,7 +40,10 @@
     "name": "Nome",
     "message": "Messagem",
     "submit": "Enviar",
-    "sucessMessage": "Mensagem Enviada! ✨"
+    "sucessMessage": "Mensagem Enviada! ✨",
+    "or": "ou",
+    "byWhatsApp": "Por WhatsApp",
+    "talkByWhatsapp": "Fale por WhatsApp"
   },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Mudar Idioma",

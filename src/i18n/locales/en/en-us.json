@@ -40,7 +40,10 @@
     "name": "Name",
     "message": "Message",
     "submit": "Submit",
-    "sucessMessage": "Mensage Sent! ✨"
+    "sucessMessage": "Mensage Sent! ✨",
+    "or": "or",
+    "byWhatsApp": "By WhatsApp",
+    "talkByWhatsapp": "Talk by WhatsApp"
   },
   "ChangeLanguageButton": {
     "changeIdiomButtonText": "Change Language",

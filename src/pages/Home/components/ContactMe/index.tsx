@@ -9,6 +9,7 @@ import { CaretLeft, CaretRight, Envelope, WhatsappLogo } from "phosphor-react";
 import { useTranslation } from "react-i18next";
 import { useWhatsAppApi } from "../../../../hooks/useWhatsAppApi";
 
+
 export function ContactMe() {
   const [messageSent, setMessageSent] = useState(false);
   const form = useRef<HTMLFormElement>(null);
@@ -88,11 +89,11 @@ export function ContactMe() {
           <SuccessMessage>{t("ContactMe.sucessMessage")}</SuccessMessage>
         )}
       </form>
-      <div className="hr">ou</div>
+      <div className="hr">{t("ContactMe.or")}</div>
       <WhatsAppButtonContainer>
-        <h2>Por WhatsApp:</h2>
+        <h2>{t("ContactMe.byWhatsApp")}:</h2>
         <button onClick={handleWhatsAppClick}>
-          Fale por Whatsapp <WhatsappLogo size={22} weight="fill" />
+        {t("ContactMe.talkByWhatsapp")} <WhatsappLogo size={22} weight="fill" />
         </button>
       </WhatsAppButtonContainer>
     </ContactFormContainer>

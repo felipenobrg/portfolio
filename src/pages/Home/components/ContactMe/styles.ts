@@ -131,6 +131,7 @@ export const ContactFormContainer = styled.div`
       width: 40%;
       height: 3.5rem;
       margin-bottom: 6rem;
+      color: ${(props => props.theme.white)};
     }
 
     .hr {
