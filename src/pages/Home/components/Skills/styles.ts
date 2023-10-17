@@ -28,6 +28,8 @@ export const SkillsGrid = styled.div`
 
   h2 {
    font-weight: 500;
+   font-size: 1rem;
+   margin-top: 5px;
   }
 
   > div {
@@ -47,7 +49,6 @@ export const SkillsGrid = styled.div`
 
      h2 {
       margin-top: 0.3rem;
-      font-size: 1rem;
      }
   }
 `;

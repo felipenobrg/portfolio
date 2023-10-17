@@ -14,13 +14,16 @@ export const ContactFormContainer = styled.div`
     justify-content: center;
     gap: 3px;
 
-    h1 {
+    h2 {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 3px;
       text-transform: none;
       font-weight: bold;
+      color: ${(props) => props.theme["gray-100"]};
+      margin-top: 2rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -37,6 +40,7 @@ export const ContactFormContainer = styled.div`
 
     &:hover {
       filter: brightness(0.8);
+      transition: 0.3s ease;
     }
   }
 
@@ -75,9 +79,40 @@ export const ContactFormContainer = styled.div`
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
 
+  .hr {
+    width: 40%;
+    text-align: center;
+    position: relative;
+  }
+
+  .hr::before,
+  .hr::after {
+    content: "";
+    border-bottom: 1px solid ${(props) => props.theme["gray-500"]};
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .hr::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    left: 0;
+  }
+
+  .hr::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    right: 0;
+  }
+
   @media screen and (max-width: 768px) {
-
-
     h1 {
       margin: 0 auto;
       margin-top: 3rem;
@@ -89,13 +124,17 @@ export const ContactFormContainer = styled.div`
     }
     form {
       width: 80%;
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
 
     .submit-button {
       width: 40%;
       height: 3.5rem;
       margin-bottom: 6rem;
+    }
+
+    .hr {
+      margin-top: -3rem;
     }
   }
 `;
@@ -121,4 +160,38 @@ export const SuccessMessage = styled.div`
       transform: translateX(0);
     }
   }
+`;
+
+export const WhatsAppButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  h2 {
+    color: ${(props) => props.theme["gray-100"]};
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+    gap: 2px;
+    margin-top: 1rem;
+    border-radius: 9px;
+    background: ${(props) => props.theme["blue-300"]};
+    cursor: pointer;
+    font-size: 16px;
+    color: ${(props) => props.theme.white};
+    font-weight: bold;
+
+    &:hover {
+      filter: brightness(0.8);
+      transition: 0.3s ease;
+    }
+  }
+
 `;

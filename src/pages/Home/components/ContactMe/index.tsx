@@ -1,13 +1,19 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { ContactFormContainer, SuccessMessage } from "./styles";
-import { CaretLeft, CaretRight, Envelope } from "phosphor-react";
+import {
+  ContactFormContainer,
+  SuccessMessage,
+  WhatsAppButtonContainer,
+} from "./styles";
+import { CaretLeft, CaretRight, Envelope, WhatsappLogo } from "phosphor-react";
 import { useTranslation } from "react-i18next";
+import { useWhatsAppApi } from "../../../../hooks/useWhatsAppApi";
 
 export function ContactMe() {
   const [messageSent, setMessageSent] = useState(false);
   const form = useRef<HTMLFormElement>(null);
   const { t } = useTranslation();
+  const { handleWhatsAppClick } = useWhatsAppApi()
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -47,9 +53,9 @@ export function ContactMe() {
         <CaretRight size={28} color="#5A7FFB" weight="fill" />
       </h1>
       <div className="contact">
-        <h1>
-          {t("ContactMe.contact")} <Envelope size={40} weight="fill" />
-        </h1>
+        <h2>
+          {t("ContactMe.contact")} <Envelope size={22} weight="fill" />
+        </h2>
       </div>
       <form ref={form} onSubmit={sendEmail}>
         <input
@@ -82,6 +88,13 @@ export function ContactMe() {
           <SuccessMessage>{t("ContactMe.sucessMessage")}</SuccessMessage>
         )}
       </form>
+      <div className="hr">ou</div>
+      <WhatsAppButtonContainer>
+        <h2>Por WhatsApp:</h2>
+        <button onClick={handleWhatsAppClick}>
+          Fale por Whatsapp <WhatsappLogo size={22} weight="fill" />
+        </button>
+      </WhatsAppButtonContainer>
     </ContactFormContainer>
   );
 }
