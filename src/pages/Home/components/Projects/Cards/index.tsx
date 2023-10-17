@@ -16,11 +16,12 @@ export interface ProjectCardProps {
   title: string;
   description: string;
   technology1: string;
-  technology2: string;
-  technology3: string;
-  technology4: string;
-  urlProject: string;
+  technology2?: string;
+  technology3?: string;
+  technology4?: string;
+  urlProject?: string;
   githubUrl?: string;
+  isProfessional: boolean;
 }
 
 export function ProjectCard({
