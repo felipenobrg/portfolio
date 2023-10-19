@@ -116,7 +116,6 @@ export const ContactFormContainer = styled.div`
     h1 {
       margin: 0 auto;
       margin-top: 3rem;
-      font-size: 1.2rem;
 
       svg {
         width: 2rem;
