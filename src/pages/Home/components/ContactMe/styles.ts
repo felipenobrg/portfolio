@@ -48,7 +48,6 @@ export const ContactFormContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: start;
-    font-size: 1.8rem;
     text-transform: uppercase;
     color: ${(props) => props.theme["white"]};
     margin: 2rem auto 1rem 2rem;
