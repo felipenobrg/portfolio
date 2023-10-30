@@ -10,32 +10,34 @@ import {
 } from "./styles";
 import myPhoto from "../../../../assets/FelipeNobregaPhoto.jpg";
 import { useTranslation } from "react-i18next";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
+import resume from "../../../../assets/resume.pdf";
 
 export function SectionAbout() {
   useEffect(() => {
-    AOS.init({duration: 2000})
-  })
+    AOS.init({ duration: 2000 });
+  });
 
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const roleText = t("sectionAbout.role");
+  const roleMobile = t("sectionAbout.roleMobile");
 
   const [text] = useTypewriter({
-    words: [roleText],
+    words: [roleText, roleMobile],
     loop: true,
     typeSpeed: 120,
     deleteSpeed: 80,
   });
 
-  return (    
+  return (
     <SectionContainer id="home">
       <Header />
       <TextContainer data-aos="fade-right">
         <div className="myName">
           <h1>
-          {t("sectionAbout.greetings")} <br />{" "}
+            {t("sectionAbout.greetings")} <br />{" "}
             <span>
               Felipe <span>Nóbrega</span>{" "}
             </span>
@@ -48,14 +50,17 @@ export function SectionAbout() {
           </h1>
         </AnimationText>
         <ButtonsWrapper>
-        <ReadMoreButton href="#about">{t("sectionAbout.buttonAboutMe")}</ReadMoreButton>
-        <MyProjectsButton href="#projects">{t("sectionAbout.buttonMyProjects")}</MyProjectsButton>
+          <ReadMoreButton href="#about">
+            {t("sectionAbout.buttonAboutMe")}
+          </ReadMoreButton>
+          <MyProjectsButton href={resume}>
+            {t("sectionAbout.buttonMyProjects")}
+          </MyProjectsButton>
         </ButtonsWrapper>
       </TextContainer>
       <div className="imgContainer" data-aos="fade-right">
         <img src={myPhoto} alt="" className="myPhoto" />
       </div>
-
     </SectionContainer>
   );
 }

@@ -9,8 +9,9 @@
   "sectionAbout": {
     "greetings": "Hello, I'm",
     "role": "Front End Developer",
+    "roleMobile": "Mobile Developer",
     "buttonAboutMe": "About me",
-    "buttonMyProjects": "My projects"
+    "buttonMyProjects": "My resume"
   },
   "AboutMe": {
     "aboutMeH1": "About me",

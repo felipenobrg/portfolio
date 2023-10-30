@@ -27,6 +27,7 @@ export const SectionContainer = styled.section`
     border: 5px solid ${(props) => props.theme["blue-300"]};
     padding: 5px;
     animation: moveUpDown 1s infinite alternate ease-in-out;
+    margin-bottom: 4rem;
   }
 
   @keyframes moveUpDown {

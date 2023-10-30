@@ -9,8 +9,9 @@
   "sectionAbout": {
     "greetings": "Olá, me chamo",
     "role": "Desenvolvedor Front End",
+    "roleMobile": "Desenvolvedor Mobile",
     "buttonAboutMe": "Sobre mim",
-    "buttonMyProjects": "Meus projetos"
+    "buttonMyProjects": "Meu currículo"
   },
   "AboutMe": {
     "aboutMeH1": "Sobre mim",
