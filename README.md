@@ -20,7 +20,7 @@ This project was developed using the following technologies:
 - TypeScript
 - Styled-Components
 - EmailJS
-- i3Next
+- i18Next
 - React-Router-Dom
 - Phosphor Icons
 
