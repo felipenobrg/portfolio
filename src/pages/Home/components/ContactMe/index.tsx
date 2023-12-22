@@ -1,48 +1,54 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import {
-  ContactFormContainer,
-  SuccessMessage,
-  WhatsAppButtonContainer,
-} from "./styles";
-import { CaretLeft, CaretRight, Envelope, WhatsappLogo } from "phosphor-react";
+import { CaretLeft, CaretRight, Envelope } from "phosphor-react";
 import { useTranslation } from "react-i18next";
-import { useWhatsAppApi } from "../../../../hooks/useWhatsAppApi";
+import * as z from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { ContactFormContainer, SuccessMessage } from "./styles";
 
+const contactFormSchema = z.object({
+  name: z.string(),
+  email: z.string().email(),
+  message: z.string(),
+});
+
+type ContactFormInputs = z.infer<typeof contactFormSchema>;
 
 export function ContactMe() {
   const [messageSent, setMessageSent] = useState(false);
-  const form = useRef<HTMLFormElement>(null);
+  const [errorMessage, setErrorMessage] = useState("");
   const { t } = useTranslation();
-  const { handleWhatsAppClick } = useWhatsAppApi()
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting, errors },
+    reset,
+  } = useForm<ContactFormInputs>({
+    resolver: zodResolver(contactFormSchema),
+  });
 
-    if (form.current) {
-      emailjs
-        .sendForm(
-          "service_bharj3q",
-          "template_bh1tzsm",
-          form.current,
-          "QaCdHlqo7_ReUJZ9x"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setMessageSent(true);
+  const sendEmail = async (values: ContactFormInputs) => {
+    try {
+      const result = await emailjs.send(
+        "service_bharj3q",
+        "template_bh1tzsm",
+        values,
+        "QaCdHlqo7_ReUJZ9x"
+      );
 
-            if (form.current) {
-              form.current.reset();
-            }
-            setTimeout(() => {
-              setMessageSent(false);
-            }, 3000);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      console.log(result.text);
+      setMessageSent(true);
+      reset();
+
+      setTimeout(() => {
+        setMessageSent(false);
+      }, 3000);
+
+      setErrorMessage("");
+    } catch (error) {
+      setErrorMessage("Erro no envio do email");
     }
   };
 
@@ -58,44 +64,45 @@ export function ContactMe() {
           {t("ContactMe.contact")} <Envelope size={22} weight="fill" />
         </h2>
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form onSubmit={handleSubmit(sendEmail)}>
         <input
           type="text"
-          name="user_name"
+          className="user_name"
           placeholder={t("ContactMe.name")}
           data-aos="fade-right"
           required
+          {...register("name")}
         />
         <input
           type="email"
-          name="user_email"
+          className="user_email"
           placeholder="Email"
           data-aos="fade-right"
           required
+          {...register("email")}
         />
+        {errors.email && (
+          <p className="error-message">Email inválido</p>
+        )}
         <textarea
-          name="message"
+          className="message"
           placeholder={t("ContactMe.message")}
           data-aos="fade-right"
           required
+          {...register("message")}
         />
         <input
           className="submit-button"
           type="submit"
           value={t("ContactMe.submit")}
           data-aos="fade-right"
+          disabled={isSubmitting}
         />
         {messageSent && (
           <SuccessMessage>{t("ContactMe.sucessMessage")}</SuccessMessage>
         )}
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </form>
-      <div className="hr">{t("ContactMe.or")}</div>
-      <WhatsAppButtonContainer>
-        <h2>{t("ContactMe.byWhatsApp")}:</h2>
-        <button onClick={handleWhatsAppClick}>
-        {t("ContactMe.talkByWhatsapp")} <WhatsappLogo size={22} weight="fill" />
-        </button>
-      </WhatsAppButtonContainer>
     </ContactFormContainer>
   );
 }

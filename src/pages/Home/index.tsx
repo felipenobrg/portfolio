@@ -3,7 +3,6 @@ import { SectionAbout } from "./components/SectionAbout";
 import { AboutMe } from "./components/AboutMe";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
-import { WhatsAppButton } from "./components/WhatsAppButton";
 import { ChangeLanguageButton } from "./components/ChangeLanguageButton";
 import { Footer } from "./components/Footer";
 import { LoadingSpinner } from "./components/LoadingAnimation";
@@ -31,7 +30,6 @@ export function Home() {
           <Skills />
           <Projects />
           <ContactMe />
-          <WhatsAppButton />
           <ChangeLanguageButton />
           <Footer />
         </>
