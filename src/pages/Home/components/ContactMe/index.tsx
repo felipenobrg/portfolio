@@ -5,19 +5,18 @@ import { useTranslation } from "react-i18next";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ContactFormContainer, SuccessMessage } from "./styles";
+import { ContactFormContainer, ErrorMessage, SuccessMessage } from "./styles";
 
 const contactFormSchema = z.object({
-  name: z.string(),
+  name: z.string().min(3),
   email: z.string().email(),
-  message: z.string(),
+  message: z.string().min(3),
 });
 
 type ContactFormInputs = z.infer<typeof contactFormSchema>;
 
 export function ContactMe() {
   const [messageSent, setMessageSent] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
   const { t } = useTranslation();
 
   const {
@@ -45,10 +44,8 @@ export function ContactMe() {
       setTimeout(() => {
         setMessageSent(false);
       }, 3000);
-
-      setErrorMessage("");
     } catch (error) {
-      setErrorMessage("Erro no envio do email");
+      console.log(error)
     }
   };
 
@@ -64,7 +61,7 @@ export function ContactMe() {
           {t("ContactMe.contact")} <Envelope size={22} weight="fill" />
         </h2>
       </div>
-      <form onSubmit={handleSubmit(sendEmail)}>
+      <form onSubmit={handleSubmit(sendEmail)} noValidate>
         <input
           type="text"
           className="user_name"
@@ -73,6 +70,7 @@ export function ContactMe() {
           required
           {...register("name")}
         />
+        {errors.name && <ErrorMessage>Nome inválido</ErrorMessage>}
         <input
           type="email"
           className="user_email"
@@ -81,9 +79,7 @@ export function ContactMe() {
           required
           {...register("email")}
         />
-        {errors.email && (
-          <p className="error-message">Email inválido</p>
-        )}
+        {errors.email && <ErrorMessage>Email inválido</ErrorMessage>}
         <textarea
           className="message"
           placeholder={t("ContactMe.message")}
@@ -91,6 +87,7 @@ export function ContactMe() {
           required
           {...register("message")}
         />
+        {errors.name && <ErrorMessage>Mensagem inválido</ErrorMessage>}
         <input
           className="submit-button"
           type="submit"
@@ -101,7 +98,6 @@ export function ContactMe() {
         {messageSent && (
           <SuccessMessage>{t("ContactMe.sucessMessage")}</SuccessMessage>
         )}
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </form>
     </ContactFormContainer>
   );

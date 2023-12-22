@@ -8,7 +8,7 @@ import {
   MyProjectsButton,
   ButtonsWrapper,
 } from "./styles";
-import myPhoto from "../../../../assets/FelipeNobregaPhoto.jpg";
+import myPhoto from "../../../../assets/FelipeNobregaPhoto.webp";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";

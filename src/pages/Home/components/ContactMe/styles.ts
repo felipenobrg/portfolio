@@ -194,3 +194,8 @@ export const WhatsAppButtonContainer = styled.div`
   }
 
 `;
+
+export const ErrorMessage = styled.p`
+  color: ${(props) => props.theme["red"]};
+  font-weight: bold;
+`
