@@ -13,14 +13,15 @@ import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import resume from "../../../../assets/resume.pdf";
+import resumeEnglish from "../../../../assets/Curriculum_EN_FelipeNobrega.pdf";
+import resumePortuguese from "../../../../assets/Curriculo_FelipeNobrega.pdf";
 
 export function SectionAbout() {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   });
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const roleText = t("sectionAbout.role");
   const roleMobile = t("sectionAbout.roleMobile");
 
@@ -31,6 +32,11 @@ export function SectionAbout() {
     deleteSpeed: 80,
   });
 
+  
+  const currentLanguage = i18n.language || "en"; 
+
+  const resume = currentLanguage === "en" ? resumeEnglish : resumePortuguese;
+  
   return (
     <SectionContainer id="home">
       <Header />
