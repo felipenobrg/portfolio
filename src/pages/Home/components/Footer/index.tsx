@@ -35,7 +35,7 @@ export function Footer() {
       <div className="line-container">
         <div className="line"></div>
         <p>
-          © Copyright 2023. {t("Footer.madeBy")}{" "}
+          © Copyright 2024. {t("Footer.madeBy")}{" "}
           <a href="https://www.linkedin.com/in/felipenobrg/">Felipe Nóbrega</a>
         </p>
       </div>
