@@ -1,7 +1,7 @@
 import { CaretDown, CaretRight, Globe } from "phosphor-react";
 import { ChangeLanguageContainer, MenuBarContent, MenuBarIcon, MenuBarItem } from "./styles";
 import * as Menubar from '@radix-ui/react-menubar';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 export function ChangeLanguageButton() {
@@ -13,10 +13,19 @@ export function ChangeLanguageButton() {
     pt: t("ChangeLanguageButton.portugueseName")
   };
 
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("selectedLanguage");
+    if (savedLanguage && savedLanguage !== currentLanguage) {
+      changeLanguage(savedLanguage);
+      setCurrentLanguage(savedLanguage);
+    }
+  }, [currentLanguage, changeLanguage]);
+
   const handleChangeLanguage = (newLanguage: string) => {
     if (newLanguage !== currentLanguage) {
       changeLanguage(newLanguage);
       setCurrentLanguage(newLanguage);
+      localStorage.setItem("selectedLanguage", newLanguage);
     }
   };
 
