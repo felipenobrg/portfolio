@@ -12,18 +12,32 @@ import myPhoto from "../../../../assets/FelipeNobregaPhoto.webp";
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import resumeEnglish from "../../../../assets/Curriculum_EN_FelipeNobrega.pdf";
 import resumePortuguese from "../../../../assets/Curriculo_FelipeNobrega.pdf";
 
 export function SectionAbout() {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  });
-
   const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language || "en";
+
+  const resume = currentLanguage === "en" ? resumeEnglish : resumePortuguese;
+  const [selectedLanguage, setSelectedLanguage] = useState(currentLanguage);
+
   const roleText = t("sectionAbout.role");
   const roleMobile = t("sectionAbout.roleMobile");
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+    const storedLanguage = localStorage.getItem("selectedLanguage");
+    if (storedLanguage) {
+      setSelectedLanguage(storedLanguage);
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem("selectedLanguage", selectedLanguage);
+    i18n.changeLanguage(selectedLanguage);
+  }, [selectedLanguage, i18n]);
 
   const [text] = useTypewriter({
     words: [roleText, roleMobile],
@@ -32,11 +46,6 @@ export function SectionAbout() {
     deleteSpeed: 80,
   });
 
-  
-  const currentLanguage = i18n.language || "en"; 
-
-  const resume = currentLanguage === "en" ? resumeEnglish : resumePortuguese;
-  
   return (
     <SectionContainer id="home">
       <Header />

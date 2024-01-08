@@ -10,12 +10,20 @@ export const ChangeLanguageContainer = styled(Menubar.Root)`
   bottom: 30px;
   left: 5px;
   cursor: pointer;
+
+  &:focus {
+    box-shadow: none;
+  }
 `;
 
 export const MenuBarIcon = styled(Menubar.Trigger)`
   background: none;
   border: 0;
   opacity: 0.9;
+
+  &:focus {
+    box-shadow: none;
+  }
   p {
     display: flex;
     align-items: center;
@@ -30,6 +38,10 @@ export const MenuBarIcon = styled(Menubar.Trigger)`
     margin-right: auto;
 
     max-width: 10rem;
+
+    &:focus {
+      box-shadow: none;
+    }
 
     svg {
       flex-shrink: 0;
@@ -50,6 +62,10 @@ export const MenuBarContent = styled(Menubar.Content)`
   cursor: pointer;
   width: 7rem;
 
+  &:focus {
+    box-shadow: none;
+  }
+
   p {
     display: flex;
     align-items: center;
@@ -65,4 +81,9 @@ export const MenuBarItem = styled(Menubar.Item)`
   color: ${(props) => props.theme.white};
   cursor: pointer;
   margin-top: 0.2rem;
+
+    
+  &:focus {
+    box-shadow: none;
+  }
 `;
